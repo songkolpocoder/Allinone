@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>গণিত স্পেশাল মাস্টার ব্যাংক - ৫টি সরকারি চাকরির লিখিত পরীক্ষা | BILAS ACADEMY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #070b14;
+    --card-surface: rgba(18, 25, 42, 0.85);
+    --border-light: rgba(255, 255, 255, 0.08);
+    --primary-accent: #10b981;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: 'Hind Siliguri', 'Poppins', sans-serif;
+    background: radial-gradient(circle at 50% 0%, #06281e 0%, #071210 50%, #020608 100%);
+    color: var(--text-main);
+    min-height: 100vh;
+    padding: 30px 14px 80px;
+    perspective: 1400px;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* Master Header */
+  .master-header {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(15, 23, 42, 0.95));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    border-radius: 26px;
+    padding: 35px 22px;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+                0 0 30px rgba(16, 185, 129, 0.15),
+                inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .master-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .badge-main {
+    display: inline-block;
+    padding: 6px 22px;
+    background: linear-gradient(135deg, #10b981, #06b6d4, #6366f1);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    letter-spacing: 0.6px;
+    box-shadow: 0 4px 18px rgba(16, 185, 129, 0.4);
+  }
+
+  h1 {
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #ffffff 30%, #a7f3d0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .post-desc {
+    font-size: 1.15rem;
+    color: #34d399;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .exam-meta-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .meta-tag {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 14px;
+    border-radius: 12px;
+    font-size: 0.86rem;
+    color: #cbd5e1;
+    font-weight: 500;
+  }
+
+  .supervisor-tag {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.12);
+    font-size: 0.95rem;
+    color: #94a3b8;
+  }
+
+  .brand-pill {
+    display: inline-block;
+    background: linear-gradient(135deg, #059669, #34d399);
+    color: #080c16;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-left: 6px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Control Panel */
+  .control-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 26px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(14px);
+    padding: 12px 20px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .stat-tracker {
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: #34d399;
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn-ui {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .btn-open-all {
+    background: #059669;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+  }
+  .btn-open-all:hover { transform: translateY(-2px) scale(1.03); background: #047857; }
+
+  .btn-close-all {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .btn-close-all:hover { transform: translateY(-2px) scale(1.03); background: rgba(255, 255, 255, 0.16); }
+
+  /* Quick Navigation Chips */
+  .nav-scroller {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    scrollbar-width: thin;
+  }
+
+  .nav-chip {
+    white-space: nowrap;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #cbd5e1;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .nav-chip:hover {
+    background: #34d399;
+    color: #080c16;
+    border-color: #34d399;
+    transform: translateY(-2px);
+  }
+
+  /* Topic Headings */
+  .topic-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(16, 185, 129, 0.35);
+  }
+
+  .topic-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .topic-badge-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #10b981, #06b6d4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+  }
+
+  .topic-title {
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #f1f5f9;
+  }
+
+  .topic-count {
+    background: rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  /* Grid Layouts */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .cards-grid-single {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  /* 3D Interactive Card */
+  .card-3d-wrap {
+    border-radius: 18px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(18, 26, 40, 0.88);
+  }
+
+  .card-3d-wrap:hover {
+    transform: translateY(-3px);
+  }
+
+  /* Theme Palette System */
+  .theme-cyan { --t-color: #06b6d4; --t-glow: rgba(6, 182, 212, 0.35); --t-bg: rgba(6, 182, 212, 0.12); }
+  .theme-purple { --t-color: #a855f7; --t-glow: rgba(168, 85, 247, 0.35); --t-bg: rgba(168, 85, 247, 0.12); }
+  .theme-amber { --t-color: #f59e0b; --t-glow: rgba(245, 158, 11, 0.35); --t-bg: rgba(245, 158, 11, 0.12); }
+  .theme-emerald { --t-color: #10b981; --t-glow: rgba(16, 185, 129, 0.35); --t-bg: rgba(16, 185, 129, 0.12); }
+  .theme-rose { --t-color: #f43f5e; --t-glow: rgba(244, 63, 94, 0.35); --t-bg: rgba(244, 63, 94, 0.12); }
+  .theme-blue { --t-color: #38bdf8; --t-glow: rgba(56, 189, 248, 0.35); --t-bg: rgba(56, 189, 248, 0.12); }
+
+  .card-3d-wrap {
+    border-left: 5px solid var(--t-color);
+  }
+
+  .card-3d-wrap:hover {
+    box-shadow: 0 12px 28px -5px var(--t-glow);
+  }
+
+  .card-3d-wrap.active {
+    border-color: var(--t-color);
+    box-shadow: 0 18px 40px -8px var(--t-glow);
+  }
+
+  /* Card Trigger Button */
+  .card-trigger {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.04rem;
+    color: var(--text-main);
+    font-weight: 600;
+    text-align: left;
+    gap: 14px;
+    user-select: none;
+  }
+
+  .trigger-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+  }
+
+  .source-pill {
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: var(--t-color);
+    background: var(--t-bg);
+    border: 1px solid var(--t-color);
+    padding: 2px 9px;
+    border-radius: 6px;
+    align-self: flex-start;
+  }
+
+  .question-text {
+    line-height: 1.55;
+    font-size: 1.05rem;
+    color: #f8fafc;
+  }
+
+  .trigger-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .action-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.25s ease;
+  }
+
+  .card-3d-wrap.active .action-hint {
+    background: var(--t-color);
+    color: #fff;
+  }
+
+  .arrow-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s;
+  }
+
+  .arrow-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: #94a3b8;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .card-3d-wrap.active .arrow-btn {
+    transform: rotate(180deg);
+    background: var(--t-color);
+  }
+
+  .card-3d-wrap.active .arrow-btn svg {
+    stroke: #ffffff;
+  }
+
+  /* 3D Animation Modes for Answer Dropdown */
+  .ans-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* 1. Zoom In 3D Effect */
+  .anim-zoom .ans-wrapper {
+    transform: scale(0.85) translateZ(-60px);
+  }
+  .anim-zoom.active .ans-wrapper {
+    max-height: 1200px;
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+
+  /* 2. Slide from Right 3D Effect */
+  .anim-slide-r .ans-wrapper {
+    transform: translateX(45px) rotateY(-18deg);
+  }
+  .anim-slide-r.active .ans-wrapper {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  /* 3. Slide from Left 3D Effect */
+  .anim-slide-l .ans-wrapper {
+    transform: translateX(-45px) rotateY(18deg);
+  }
+  .anim-slide-l.active .ans-wrapper {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  /* 4. 3D Flip Down Effect */
+  .anim-flip .ans-wrapper {
+    transform: perspective(600px) rotateX(-35deg) translateY(-10px);
+    transform-origin: top;
+  }
+  .anim-flip.active .ans-wrapper {
+    max-height: 1200px;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg) translateY(0);
+  }
+
+  .ans-content {
+    padding: 20px 22px 22px;
+    background: rgba(10, 16, 26, 0.94);
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    font-size: 1.02rem;
+    line-height: 1.8;
+    color: #e2e8f0;
+  }
+
+  .ans-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--t-bg);
+    color: var(--t-color);
+    border: 1px solid var(--t-color);
+    padding: 3px 12px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .math-step-box {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--t-color);
+    padding: 14px 18px;
+    margin: 12px 0;
+    border-radius: 0 12px 12px 0;
+    font-family: 'Poppins', 'Hind Siliguri', monospace;
+    font-size: 1.02rem;
+    line-height: 1.85;
+    color: #f1f5f9;
+  }
+
+  .highlight-res {
+    color: #34d399;
+    font-weight: 700;
+    font-size: 1.08rem;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 35px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  }
+
+  .supervision-title {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    font-weight: 500;
+  }
+
+  .supervision-brand {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #34d399, #10b981, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-top: 6px;
+    text-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.7rem; }
+    .post-desc { font-size: 1.05rem; }
+    .card-trigger { padding: 15px 14px; font-size: 0.98rem; }
+    .action-hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="master-header">
+    <span class="badge-main">🌟 বিষয়ভিত্তিক বিশেষ মাস্টার সংস্করণ (Topic-Wise Math Series)</span>
+    <h1>গণিত স্পেশাল মাস্টার ব্যাংক</h1>
+    <div class="post-desc">বিগত ৫টি সরকারি চাকরির লিখিত পরীক্ষার শতভাগ গাণিতিক সমস্যা ও ব্যাখ্যাসহ সমাধান</div>
+    <div class="exam-meta-grid">
+      <span class="meta-tag">🏛️ বিভাগীয় কমিশনারের কার্যালয় সিলেট</span>
+      <span class="meta-tag">⚖️ বাংলাদেশ জুডিসিয়াল সার্ভিস কমিশন (নৈশ প্রহরী)</span>
+      <span class="meta-tag">💻 বাংলাদেশ জুডিসিয়াল সার্ভিস কমিশন (অফিস সহকারী)</span>
+      <span class="meta-tag">🏢 মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+      <span class="meta-tag">📜 মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span>
+      <span class="meta-tag">🔬 BSTI (ইউডিসি কাম ক্যাশিয়ার)</span>
+    </div>
+    <div class="supervisor-tag">
+      সার্বিক তত্ত্বাবধানে: <strong style="color:#f8fafc; font-size:1.05rem;">বিলাস একাডেমি</strong>
+      <span class="brand-pill">BILAS ACADEMY</span>
+    </div>
+  </div>
+
+  <!-- Control & Stats Panel -->
+  <div class="control-panel">
+    <div class="stat-tracker">
+      📐 সর্বমোট গাণিতিক সমস্যা: <span id="totalCards">০</span> টি | উন্মুক্ত: <span id="openedCount">০</span> টি
+    </div>
+    <div class="btn-group">
+      <button class="btn-ui btn-open-all" onclick="toggleAllCards(true)">সব খুলুন 🔓</button>
+      <button class="btn-ui btn-close-all" onclick="toggleAllCards(false)">সব লুকান 🔒</button>
+    </div>
+  </div>
+
+  <!-- Quick Navigation Chips -->
+  <div class="nav-scroller">
+    <a href="#topic-oikik" class="nav-chip">১. ঐকিক নিয়ম, সময়, কাজ ও খাদ্য</a>
+    <a href="#topic-profit" class="nav-chip">২. শতকরা, লাভ-ক্ষতি ও সরল মুনাফা</a>
+    <a href="#topic-ratio" class="nav-chip">৩. অনুপাত, মিশ্রণ, ল.সা.গু ও বয়স</a>
+    <a href="#topic-algebra" class="nav-chip">৪. বীজগণিতীয় সমীকরণ ও ভগ্নাংশ</a>
+    <a href="#topic-factor" class="nav-chip">৫. উৎপাদকে বিশ্লেষণ ও মান নির্ণয়</a>
+    <a href="#topic-geometry" class="nav-chip">৬. জ্যামিতি, পরিমিতি ও সাধারণ অঙ্ক</a>
+  </div>
+
+  <!-- ==================== ১. ঐকিক নিয়ম, সময়, কাজ ও খাদ্য ==================== -->
+  <div id="topic-oikik" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০১</div>
+      <div class="topic-title">ঐকিক নিয়ম, সময়, কাজ ও খাদ্য সংক্রান্ত সমস্যা</div>
+    </div>
+    <span class="topic-count">৫টি সমস্যা</span>
+  </div>
+
+  <div class="cards-grid-single">
+    <!-- জুডিসিয়াল নৈশ প্রহরী - খাদ্য -->
+    <div class="card-3d-wrap theme-purple anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span>
+          <div class="question-text">একটি সেনাবাহিনীর গুদামে ১২০০ জন সৈনিকের ৩০ দিনের খাদ্য মজুদ আছে। ১০ দিন পরে ঐ সেনাবাহিনীতে আরও ৩০০ জন সৈনিক আসল। বাকি খাদ্যে তাদের আর কত দিন চলবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">ঐকিক নিয়ম সমাধান</span>
+          <div class="math-step-box">
+            অবশিষ্ট দিন = (৩০ − ১০) = ২০ দিন<br>
+            মোট সৈনিক সংখ্যা = (১২০০ + ৩০০) = ১৫০০ জন<br><br>
+            ১২০০ জন সৈনিকের খাদ্য চলে = ২০ দিন<br>
+            ১ জন সৈনিকের খাদ্য চলে = (২০ × ১২০০) দিন<br>
+            ∴ ১৫০০ জন সৈনিকের খাদ্য চলে = (২০ × ১২০০) ÷ ১৫০০ = <span class="highlight-res">১৬ দিন</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: বাকি খাদ্যে তাদের আর ১৬ দিন চলবে।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- জুডিসিয়াল অফিস সহকারী - শ্রমিক ও দিন -->
+    <div class="card-3d-wrap theme-cyan anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span>
+          <div class="question-text">২০ জন শ্রমিক কোন কাজ ১২ দিনে সম্পূর্ণ করতে পারে। কাজ শুরুর ৮ দিন পর ১০ জন শ্রমিক অন্যত্র গেলে বাকি শ্রমিক কতদিনে কাজটি শেষ করতে পারবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">সময় ও কাজ</span>
+          <div class="math-step-box">
+            বাকি দিন = (১২ − ৮) = ৪ দিন<br>
+            বাকি শ্রমিক = (২০ − ১০) = ১০ জন<br><br>
+            ২০ জন শ্রমিক বাকি কাজটি করতে পারে = ৪ দিনে<br>
+            ১ জন শ্রমিক কাজটি করতে পারে = (৪ × ২০) দিনে<br>
+            ∴ ১০ জন শ্রমিক কাজটি শেষ করতে পারবে = (৪ × ২০) ÷ ১০ = <span class="highlight-res">৮ দিনে</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: বাকি শ্রমিক ৮ দিনে কাজটি শেষ করতে পারবে।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BSTI - মিতা ও রিতা -->
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">বিএসটিআই (BSTI)</span>
+          <div class="question-text">মিতা একটি কাজ ১০ দিনে করতে পারে। ঐ একই কাজ রিতা ১৫ দিনে করতে পারে। রিতা কাজটি ৫ দিন করার পর বাকী কাজ উভয়ে কত দিনে করতে পারবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">কাজ ও ভগ্নাংশ সমাধান</span>
+          <div class="math-step-box">
+            রিতা ১৫ দিনে করে = ১ (সম্পূর্ণ) অংশ<br>
+            ∴ রিতা ৫ দিনে করে = ৫/১৫ = ১/৩ অংশ কাজ।<br>
+            ∴ বাকী কাজ থাকে = (১ − ১/৩) = <b>২/৩ অংশ</b>。<br><br>
+            মিতা ও রিতা একত্রে ১ দিনে করে = (১/১০ + ১/১৫) = (৩ + ২) / ৩০ = ৫/৩০ = <b>১/৬ অংশ</b>。<br><br>
+            উভয়ে একত্রে ১/৬ অংশ কাজ করে = ১ দিনে<br>
+            ∴ উভয়ে একত্রে ১ (সম্পূর্ণ) অংশ কাজ করে = ৬ দিনে<br>
+            ∴ উভয়ে একত্রে বাকী ২/৩ অংশ কাজ করে = (৬ × ২/৩) = <span class="highlight-res">৪ দিনে</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: বাকী কাজ উভয়ে ৪ দিনে করতে পারবে।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ - বানর ও তৈলাক্ত বাঁশ -->
+    <div class="card-3d-wrap theme-emerald anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+          <div class="question-text">একটি বানর একটি তৈলাক্ত বাঁশে ১ম মিনিটে ৪ মিটার ওঠে এবং পরবর্তী মিনিটে ১ মিটার নামে। বাঁশটির দৈর্ঘ্য ১৯ মিটার হলে, বানরটির বাঁশটির উপরে উঠতে কত সময় লাগবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">গতি ও সময় সমাধান</span>
+          <div class="math-step-box">
+            ১ম মিনিটে ওঠে ৪ মিটার এবং ২য় মিনিটে নামে ১ মিটার।<br>
+            ∴ প্রতি (১ + ১) বা ২ মিনিটে প্রকৃত ওঠে = (৪ − ১) = <b>৩ মিটার</b>。<br><br>
+            বাঁশটির দৈর্ঘ্য ১৯ মিটার। শেষ ১ মিনিটে বানরটি ৪ মিটার উঠে চূড়া স্পর্শ করবে এবং তখন আর নামবে না।<br>
+            ∴ শেষ মিনিটের পূর্বে বানরটিকে উঠতে হবে = (১৯ − ৪) = <b>১৫ মিটার</b>。<br><br>
+            বানরটি ৩ মিটার ওঠে = ২ মিনিটে<br>
+            ∴ বানরটি ১ মিটার ওঠে = ২/৩ মিনিটে<br>
+            ∴ বানরটি ১৫ মিটার ওঠে = (২ × ১৫) / ৩ = <b>১০ মিনিটে</b>。<br><br>
+            পরবর্তী ১ম মিনিটে বাকি ৪ মিটার উঠে শীর্ষে পৌঁছে যায়।<br>
+            ∴ বাঁশটির শীর্ষে উঠতে মোট সময় লাগে = (১০ + ১) = <span class="highlight-res">১১ মিনিট</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ১১ মিনিট।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- জুডিসিয়াল নৈশ প্রহরী - নৈশ প্রহরীর পরিদর্শন -->
+    <div class="card-3d-wrap theme-purple anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span>
+          <div class="question-text">রাতে প্রতি ২ ঘণ্টা পর পর একজন নৈশ প্রহরী ভবনের চারপাশ পরিদর্শন করেন। রাত ১০ টা থেকে সকাল ৬ টা পর্যন্ত তিনি কতবার পরিদর্শন করবেন?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">সময় ব্যবধান হিসাব</span>
+          <div class="math-step-box">
+            রাত ১০ টা থেকে সকাল ৬ টা পর্যন্ত মোট সময় = ৮ ঘণ্টা।<br>
+            প্রতি ২ ঘণ্টা পর পর পরিদর্শন করলে ব্যবধান সংখ্যা = ৮ ÷ ২ = ৪ বার।<br><br>
+            তবে, শুরু অর্থাৎ রাত ১০ টায় যদি প্রথম পরিদর্শন ধরা হয়, তবে পরিদর্শনের সময়গুলো:<br>
+            ১ম: রাত ১০টা | ২য়: রাত ১২টা | ৩য়: রাত ২টা | ৪র্থ: ভোর ৪টা | ৫ম: সকাল ৬টা।<br>
+            ∴ সর্বমোট পরিদর্শন করবেন = <span class="highlight-res">৫ বার</span> (শুধুমাত্র ব্যবধান হিসাব করলে ৪ বার)।
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ৫ বার (শুরুসহ) / ৪ বার।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ২. শতকরা, লাভ-ক্ষতি ও সরল মুনাফা ==================== -->
+  <div id="topic-profit" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০২</div>
+      <div class="topic-title">শতকরা, লাভ-ক্ষতি ও সরল মুনাফা</div>
+    </div>
+    <span class="topic-count">৫টি সমস্যা</span>
+  </div>
+
+  <div class="cards-grid-single">
+    <!-- সিলেট - বিনিয়োগ ও মুনাফা -->
+    <div class="card-3d-wrap theme-blue anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">সিলেট বিভাগীয় কমিশনার</span>
+          <div class="question-text">দবির উদ্দিন সাহেব তাঁর ৫৬,০০০ টাকার কিছু টাকা বার্ষিক ১২% মুনাফায় ও বাকি টাকা বার্ষিক ১০% মুনাফায় বিনিয়োগ করলেন। এক বছর পর তিনি মোট ৬,৪০০ টাকা মুনাফা পেলেন। তিনি ১২% মুনাফায় কত টাকা বিনিয়োগ করেছিলেন?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">মুনাফা ও বিনিয়োগ সমীকরণ</span>
+          <div class="math-step-box">
+            ধরি, ১২% মুনাফায় বিনিয়োগ করেছিলেন = x টাকা।<br>
+            সুতরাং ১০% মুনাফায় বিনিয়োগ করেছিলেন = (৫৬,০০০ − x) টাকা。<br><br>
+            প্রশ্নমতে,<br>
+            x × ১২% + (৫৬,০০০ − x) × ১০% = ৬,৪০০<br>
+            বা, (১২x / ১০০) + [১০(৫৬,০০০ − x) / ১০০] = ৬,৪০০<br>
+            বা, [১২x + ৫,৬০,০০০ − ১০x] / ১০০ = ৬,৪০০<br>
+            বা, ২x + ৫,৬০,০০০ = ৬,৪০,০০০<br>
+            বা, ২x = ৬,৪০,০০০ − ৫,৬০,০০০<br>
+            বা, ২x = ৮০,০০০<br>
+            বা, x = ৮০,০০০ ÷ ২ = <span class="highlight-res">৪০,০০০ টাকা</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ১২% মুনাফায় ৪০,০০০ টাকা বিনিয়োগ করেছিলেন।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- জুডিসিয়াল অফিস সহকারী - ছাড় ও লাভ-ক্ষতি -->
+    <div class="card-3d-wrap theme-cyan anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span>
+          <div class="question-text">একজন বিক্রেতা একটি পণ্য ৩০% ছাড় দিয়ে বিক্রয় করায় তার ১৬% লোকসান হলো। পণ্যটি ১০% ছাড়ে বিক্রি করলে তার কত ক্ষতি বা লাভ হবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">ধার্যমূল্য ও লাভ-ক্ষতি</span>
+          <div class="math-step-box">
+            ধরি, পণ্যটির ক্রয়মূল্য = ১০০ টাকা।<br>
+            ১৬% লোকসানে বিক্রয়মূল্য = (১০০ − ১৬) = ৮৪ টাকা。<br>
+            আবার, ৩০% ছাড়ে বিক্রয়মূল্য = (১০০ − ৩০) = ৭০ টাকা。<br><br>
+            বিক্রয়মূল্য ৭০ টাকা হলে ধার্যমূল্য = ১০০ টাকা<br>
+            বিক্রয়মূল্য ৮৪ টাকা হলে ধার্যমূল্য = (১০০ × ৮৪) ÷ ৭০ = ১২০ টাকা。<br><br>
+            এখন, ১০% ছাড় দিলে বিক্রয়মূল্য হবে:<br>
+            = ১২০ − (১২০ এর ১০%) = ১২০ − ১২ = ১০৮ টাকা。<br><br>
+            ∴ লাভ = (বিক্রয়মূল্য − ক্রয়মূল্য) = ১০৮ − ১০০ = <span class="highlight-res">৮ টাকা বা ৮%</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ৮% লাভ হবে।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) - I = prn সরল মুনাফা -->
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span>
+          <div class="question-text">বার্ষিক শতকরা ৮.৫০ টাকা হার মুনাফায় কত টাকার ৬ বছরের মুনাফা ২,৫৫০ টাকা হবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">সরল মুনাফা সূত্র</span>
+          <div class="math-step-box">
+            এখানে,<br>
+            মুনাফার হার, r = ৮.৫০% = ৮.৫০ / ১০০ = ০.০৮৫<br>
+            সময়, n = ৬ বছর<br>
+            মোট মুনাফা, I = ২,৫৫০ টাকা<br>
+            মূলধন / আসল, P = ?<br><br>
+            আমরা জানি, <b>I = P·r·n</b><br>
+            বা, P = I / (r × n)<br>
+            বা, P = ২,৫৫০ / (০.০৮৫ × ৬)<br>
+            বা, P = ২,৫৫০ / ০.৫১ = <span class="highlight-res">৫,০০০ টাকা</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: মূলধন বা আসল ৫,০০০ টাকা।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) - ক্ষতি ও দ্বিগুণ লাভ -->
+    <div class="card-3d-wrap theme-emerald anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+          <div class="question-text">একটি দ্রব্য ৩৬ টাকায় বিক্রয় করায় যত ক্ষতি হলো, ৭২ টাকায় বিক্রয় করায় তার দ্বিগুণ লাভ হলো। দ্রব্যটির ক্রয়মূল্য কত টাকা?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">ক্রয়মূল্য নির্ণয় সমীকরণ</span>
+          <div class="math-step-box">
+            ধরি, দ্রব্যটির ক্রয়মূল্য = x টাকা。<br>
+            ৩৬ টাকায় বিক্রয়ে ক্ষতি = (x − ৩৬) টাকা。<br>
+            ৭২ টাকায় বিক্রয়ে লাভ = (৭২ − x) টাকা。<br><br>
+            প্রশ্নমতে,<br>
+            ২ × (ক্ষতি) = লাভ<br>
+            বা, ২(x − ৩৬) = ৭২ − x<br>
+            বা, ২x − ৭২ = ৭২ − x<br>
+            বা, ২x + x = ৭২ + ৭২<br>
+            বা, ৩x = ১৪৪<br>
+            বা, x = ১৪৪ ÷ ৩ = <span class="highlight-res">৪৮ টাকা</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: দ্রব্যটির ক্রয়মূল্য ৪৮ টাকা।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BSTI - লেবু ক্রয়-বিক্রয় লাভ-ক্ষতি -->
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">বিএসটিআই (BSTI)</span>
+          <div class="question-text">৫০ টাকায় ১০টি লেবু বিক্রয় করায় ৫০% ক্ষতি হয়। ৫০ টাকায় ৬টি লেবু বিক্রয় করলে শতকরা কত লাভ বা ক্ষতি হবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">শতকরা ক্ষতি নির্ণয়</span>
+          <div class="math-step-box">
+            ১০টি লেবুর বিক্রয়মূল্য ৫০ টাকা হলে, ৫০% ক্ষতিতে ক্রয়মূল্য = ৫০ × (১০০ / ৫০) = ১০০ টাকা。<br>
+            ∴ ১টি লেবুর ক্রয়মূল্য = ১০০ ÷ ১০ = <b>১০ টাকা</b>。<br><br>
+            আবার, ৬টি লেবুর বিক্রয়মূল্য ৫০ টাকা<br>
+            ∴ ১টি লেবুর বিক্রয়মূল্য = ৫০/৬ = <b>২৫/৩ টাকা</b>。<br><br>
+            যেহেতু বিক্রয়মূল্য ক্রয়মূল্যের চেয়ে কম, তাই ক্ষতি হবে:<br>
+            ক্ষতি = (১০ − ২৫/৩) = (৩০ − ২৫) / ৩ = <b>৫/৩ টাকা</b> (প্রতি লেবুতে)।<br><br>
+            ১০ টাকায় ক্ষতি হয় = ৫/৩ টাকা<br>
+            ∴ ১০০ টাকায় ক্ষতি হয় = [ (৫/৩) × ১০০ ] ÷ ১০ = ৫০/৩ = <span class="highlight-res">১৬⅔% বা ১৬.৬৭%</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ১৬⅔% ক্ষতি হবে।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৩. অনুপাত, মিশ্রণ, ল.সা.গু ও বয়স ==================== -->
+  <div id="topic-ratio" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৩</div>
+      <div class="topic-title">অনুপাত, মিশ্রণ, ল.সা.গু ও বয়স সংক্রান্ত সমস্যা</div>
+    </div>
+    <span class="topic-count">৪টি সমস্যা</span>
+  </div>
+
+  <div class="cards-grid-single">
+    <!-- সিলেট - পিতা ও পুত্রের বয়স -->
+    <div class="card-3d-wrap theme-blue anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">সিলেট বিভাগীয় কমিশনার</span>
+          <div class="question-text">১০ বছর পূর্বে পিতা ও পুত্রের বয়সের অনুপাত ছিল ৪:১। ১০ বছর পরে পিতা ও পুত্রের বয়সের অনুপাত হবে ২:১। পিতা ও পুত্রের বর্তমান বয়স কত?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">বয়সের অনুপাত সমাধান</span>
+          <div class="math-step-box">
+            ধরি, ১০ বছর পূর্বে পিতার বয়স ছিল 4x বছর এবং পুত্রের বয়স ছিল x বছর。<br>
+            সুতরাং, বর্তমানে পিতার বয়স = (4x + 10) বছর এবং পুত্রের বয়স = (x + 10) বছর。<br>
+            ১০ বছর পর পিতার বয়স = 4x + 10 + 10 = (4x + 20) বছর<br>
+            ১০ বছর পর পুত্রের বয়স = x + 10 + 10 = (x + 20) বছর。<br><br>
+            প্রশ্নমতে,<br>
+            (4x + 20) : (x + 20) = 2 : 1<br>
+            বা, (4x + 20) / (x + 20) = 2 / 1<br>
+            বা, 4x + 20 = 2x + 40<br>
+            বা, 4x − 2x = 40 − 20<br>
+            বা, 2x = 20<br>
+            বা, x = 10<br><br>
+            ∴ পিতার বর্তমান বয়স = 4x + 10 = 4(10) + 10 = <span class="highlight-res">৫০ বছর</span><br>
+            এবং পুত্রের বর্তমান বয়স = x + 10 = 10 + 10 = <span class="highlight-res">২০ বছর</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: পিতার বর্তমান বয়স ৫০ বছর এবং পুত্রের বর্তমান বয়স ২০ বছর।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- জুডিসিয়াল অফিস সহকারী - কেরোসিন ও পেট্রোল মিশ্রণ -->
+    <div class="card-3d-wrap theme-cyan anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span>
+          <div class="question-text">৬০ লিটার কেরোসিন ও পেট্রোলের মিশ্রণের অনুপাত ৭:৩। ঐ মিশ্রণে আর কত লিটার পেট্রোল মিশালে অনুপাত ৩:৭ হবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">অনুপাত মিশ্রণ সমাধান</span>
+          <div class="math-step-box">
+            অনুপাতের রাশিদ্বয়ের যোগফল = (৭ + ৩) = ১০<br>
+            কেরোসিনের পরিমাণ = ৬০ × (৭/১০) = ৪২ লিটার<br>
+            পেট্রোলের পরিমাণ = ৬০ × (৩/১০) = ১৮ লিটার<br><br>
+            মনেকরি, মিশ্রণটিতে x লিটার পেট্রোল মেশাতে হবে।<br>
+            প্রশ্নমতে,<br>
+            ৪২ : (১৮ + x) = ৩ : ৭<br>
+            বা, ৪২ / (১৮ + x) = ৩ / ৭<br>
+            বা, ৩(১৮ + x) = ৪২ × ৭<br>
+            বা, ৫৪ + ৩x = ২৯৪<br>
+            বা, ৩x = ২৯৪ − ৫৪<br>
+            বা, ৩x = ২৪০<br>
+            বা, x = ২৪০ ÷ ৩ = <span class="highlight-res">৮০ লিটার</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ঐ মিশ্রণে আরও ৮০ লিটার পেট্রোল মেশাতে হবে।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) - অনুপাত, ল.সা.গু ও সমষ্টি -->
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span>
+          <div class="question-text">তিনটি সংখ্যার অনুপাত ২ : ৩ : ৫ এবং তাদের ল.সা.গু ৫৪০। সংখ্যা তিনটির গ.সা.গু কত? এবং বৃহত্তম ও ক্ষুদ্রতম সংখ্যার সমষ্টি নির্ণয় করুন।</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">অনুপাত ও ল.সা.গু</span>
+          <div class="math-step-box">
+            ধরি, সংখ্যা তিনটি যথাক্রমে <b>২x, ৩x এবং ৫x</b><br>
+            ∴ সংখ্যাগুলোর সাধারণ গুণনীয়ক বা গ.সা.গু = <b>x</b><br>
+            এবং সংখ্যাগুলোর ল.সা.গু = x × ২ × ৩ × ৫ = <b>৩০x</b><br><br>
+            প্রশ্নমতে, ৩০x = ৫৪০<br>
+            বা, x = ৫৪০ ÷ ৩০ = <b>১৮</b><br>
+            ∴ <span class="highlight-res">সংখ্যা তিনটির গ.সা.গু = ১৮</span><br><br>
+            বৃহত্তম সংখ্যা = ৫ × ১৮ = ৯০<br>
+            ক্ষুদ্রতম সংখ্যা = ২ × ১৮ = ৩৬<br>
+            ∴ বৃহত্তম ও ক্ষুদ্রতম সংখ্যার সমষ্টি = ৯০ + ৩৬ = <span class="highlight-res">১২৬</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: গ.সা.গু ১৮ এবং বৃহত্তম ও ক্ষুদ্রতম সংখ্যার সমষ্টি ১২৬।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- জুডিসিয়াল নৈশ প্রহরী - ট্যাংকের পানি ও ভগ্নাংশ -->
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span>
+          <div class="question-text">একটি ট্যাংকে ৫০০ লিটার পানি ছিল। এর ৩/৫ অংশ ব্যবহার করা হলো। অবশিষ্ট পানি কত লিটার?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">ভগ্নাংশ ও পরিমাণ</span>
+          <div class="math-step-box">
+            ট্যাংকে মোট পানি ছিল = ৫০০ লিটার<br>
+            ব্যবহার করা হলো = ৫০০ এর (৩/৫) অংশ = ৩০০ লিটার<br><br>
+            ∴ অবশিষ্ট পানি = (৫০০ − ৩০০) = <span class="highlight-res">২০০ লিটার</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: অবশিষ্ট পানি ২০০ লিটার।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৪. বীজগণিতীয় সমীকরণ ও ভগ্নাংশ ==================== -->
+  <div id="topic-algebra" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৪</div>
+      <div class="topic-title">বীজগণিতীয় সমীকরণ, মিডল টার্ম ও সমাধান</div>
+    </div>
+    <span class="topic-count">৩টি সমস্যা</span>
+  </div>
+
+  <div class="cards-grid-single">
+    <!-- BSTI - বিশেষ ভগ্নাংশ সমীকরণ -->
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">বিএসটিআই (BSTI)</span>
+          <div class="question-text">সমীকরণটি সমাধান করুন: <strong>a/(x − a) + b/(x − b) = (a + b)/(x − a − b)</strong></div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">বীজগণিতীয় ভগ্নাংশ সমাধান</span>
+          <div class="math-step-box">
+            দেওয়া আছে,<br>
+            a/(x − a) + b/(x − b) = (a + b)/(x − a − b) = a/(x − a − b) + b/(x − a − b)<br><br>
+            পক্ষান্তর করে পাই:<br>
+            a/(x − a) − a/(x − a − b) = b/(x − a − b) − b/(x − b)<br><br>
+            বা, a [ (x − a − b − x + a) / {(x − a)(x − a − b)} ] = b [ (x − b − x + a + b) / {(x − a − b)(x − b)} ]<br><br>
+            বা, a(−b) / [ (x − a)(x − a − b) ] = b(a) / [ (x − a − b)(x − b) ]<br><br>
+            উভয়পক্ষকে ab / (x − a − b) দ্বারা ভাগ করে পাই:<br>
+            বা, −1 / (x − a) = 1 / (x − b)<br>
+            বা, x − a = −(x − b) = −x + b<br>
+            বা, x + x = a + b<br>
+            বা, 2x = a + b<br>
+            ∴ <span class="highlight-res">x = (a + b) / 2</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: নির্ণেয় সমাধান x = (a + b) / 2</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) - দ্বিঘাত সমীকরণ মিডল টার্ম -->
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span>
+          <div class="question-text">উৎপাদকে বিশ্লেষণের মাধ্যমে সমাধান করুন: <strong>2(x² − 9) + 9x = 0</strong></div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">দ্বিঘাত সমীকরণ সমাধান</span>
+          <div class="math-step-box">
+            দেওয়া আছে,<br>
+            2(x² − 9) + 9x = 0<br>
+            বা, 2x² − 18 + 9x = 0<br>
+            বা, 2x² + 9x − 18 = 0<br><br>
+            মিডল টার্ম ব্রেক (১২ × −৩ = −৩৬ এবং ১২ − ৩ = ৯):<br>
+            বা, 2x² + 12x − 3x − 18 = 0<br>
+            বা, 2x(x + 6) − 3(x + 6) = 0<br>
+            বা, (x + 6)(2x − 3) = 0<br><br>
+            হয়, x + 6 = 0 ⇒ <b>x = −6</b><br>
+            অথবা, 2x − 3 = 0 ⇒ 2x = 3 ⇒ <b>x = 3/2</b><br><br>
+            ∴ <span class="highlight-res">নির্ণেয় সমাধান: x = 3/2 অথবা −6</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: x = 3/2 অথবা −6</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- জুডিসিয়াল নৈশ প্রহরী - সরল সমীকরণ -->
+    <div class="card-3d-wrap theme-purple anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span>
+          <div class="question-text">সমীকরণটি সমাধান করুন: <strong>4(x + 2) = 24</strong></div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">সরল সমীকরণ</span>
+          <div class="math-step-box">
+            4(x + 2) = 24<br>
+            বা, x + 2 = 24 ÷ 4<br>
+            বা, x + 2 = 6<br>
+            বা, x = 6 − 2<br>
+            ∴ <span class="highlight-res">x = 4</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: x = 4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৫. উৎপাদকে বিশ্লেষণ ও মান নির্ণয় ==================== -->
+  <div id="topic-factor" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৫</div>
+      <div class="topic-title">বীজগণিতীয় মান নির্ণয়, উৎপাদক ও প্রমাণ</div>
+    </div>
+    <span class="topic-count">৪টি সমস্যা</span>
+  </div>
+
+  <div class="cards-grid-single">
+    <!-- সিলেট - উৎপাদকে বিশ্লেষণ -->
+    <div class="card-3d-wrap theme-blue anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">সিলেট বিভাগীয় কমিশনার</span>
+          <div class="question-text">উৎপাদকে বিশ্লেষণ করুন: <strong>144x⁷ − 25x³a⁴</strong></div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">উৎপাদকে বিশ্লেষণ সূত্র</span>
+          <div class="math-step-box">
+            প্রদত্ত রাশি = 144x⁷ − 25x³a⁴<br>
+            = x³ (144x⁴ − 25a⁴)<br>
+            = x³ [ (12x²)² − (5a²)² ] &nbsp;&nbsp;[a² − b² = (a + b)(a − b)]<br>
+            = <span class="highlight-res">x³ (12x² + 5a²)(12x² − 5a²)</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: x³ (12x² + 5a²)(12x² − 5a²)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- সিলেট - ঘন মান নির্ণয় -->
+    <div class="card-3d-wrap theme-blue anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">সিলেট বিভাগীয় কমিশনার</span>
+          <div class="question-text">x + 1/x = 3 এবং x > 1 হলে, <strong>x³ − 1/x³</strong> এর মান নির্ণয় করুন।</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">ঘনের অনুসিদ্ধান্ত</span>
+          <div class="math-step-box">
+            দেওয়া আছে, x + 1/x = 3<br>
+            আমরা জানি,<br>
+            (x − 1/x)² = (x + 1/x)² − 4·x·(1/x)<br>
+            = (3)² − 4 = 9 − 4 = 5<br>
+            বা, x − 1/x = √5  [যেহেতু x > 1]<br><br>
+            প্রদত্ত রাশি = x³ − 1/x³<br>
+            = (x − 1/x)³ + 3·x·(1/x)(x − 1/x)<br>
+            = (√5)³ + 3(√5)<br>
+            = 5√5 + 3√5 = <span class="highlight-res">8√5</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: 8√5</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) - বর্গের মান নির্ণয় -->
+    <div class="card-3d-wrap theme-emerald anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+          <div class="question-text">x + 1/x = 3 হলে, <strong>x² + 1/x²</strong> এর মান কত?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">বর্গের অনুসিদ্ধান্ত</span>
+          <div class="math-step-box">
+            দেওয়া আছে, x + 1/x = 3<br><br>
+            প্রদত্ত রাশি = x² + 1/x²<br>
+            = (x + 1/x)² − 2·x·(1/x)<br>
+            = (3)² − 2<br>
+            = 9 − 2 = <span class="highlight-res">7</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: 7</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BSTI - বীজগণিতীয় প্রমাণ -->
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">বিএসটিআই (BSTI)</span>
+          <div class="question-text">p + q + r = 0 হলে দেখাও যে, <strong>(p + q)²/(3pq) + (q + r)²/(3qr) + (r + p)²/(3rp) = 1</strong></div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">প্রমাণ দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">বীজগণিতীয় পরিচয় প্রমাণ</span>
+          <div class="math-step-box">
+            দেওয়া আছে, p + q + r = 0<br>
+            ∴ p + q = −r, &nbsp; q + r = −p, &nbsp; r + p = −q<br><br>
+            বামপক্ষ = (−r)²/(3pq) + (−p)²/(3qr) + (−q)²/(3rp)<br>
+            = r²/(3pq) + p²/(3qr) + q²/(3rp)<br>
+            = (r³ + p³ + q³) / (3pqr)<br>
+            = (p³ + q³ + r³) / (3pqr)<br><br>
+            আমরা জানি, p³ + q³ + r³ − 3pqr = (p + q + r)(p² + q² + r² − pq − qr − rp)<br>
+            যেহেতু p + q + r = 0, তাই p³ + q³ + r³ = 3pqr<br><br>
+            ∴ বামপক্ষ = 3pqr / 3pqr = <span class="highlight-res">1</span> = ডানপক্ষ (দেখানো হলো)।
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৬. জ্যামিতি, পরিমিতি ও সাধারণ অঙ্ক ==================== -->
+  <div id="topic-geometry" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৬</div>
+      <div class="topic-title">জ্যামিতি, পরিমিতি ও সাধারণ গণিত প্রশ্নোত্তর</div>
+    </div>
+    <span class="topic-count">৫টি সমস্যা</span>
+  </div>
+
+  <div class="cards-grid">
+    <!-- সিলেট - আয়তাকার বাগান পরিমিতি -->
+    <div class="card-3d-wrap theme-blue anim-slide-r" style="grid-column: 1 / -1;">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">সিলেট বিভাগীয় কমিশনার</span>
+          <div class="question-text">একটি আয়তাকার বাগানের পরিসীমা ১২০ মিটার। প্রস্থকে দ্বিগুণ করলে এবং দৈর্ঘ্য থেকে ৩ মিটার কমালে পরিসীমা হয় ১৫০ মিটার। যদি প্রতি বর্গমিটারে জৈব সারের জন্য ৭ টাকা খরচ হয়, তাহলে সার বাবদ মোট কত টাকা খরচ হবে?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">পরিমিতি ও ক্ষেত্রফল</span>
+          <div class="math-step-box">
+            ধরি, বাগানের দৈর্ঘ্য = x মিটার এবং প্রস্থ = y মিটার।<br>
+            ১ম শর্তমতে, 2(x + y) = 120 ➔ x + y = 60 ..... (i)<br>
+            ২য় শর্তমতে, 2(x − 3 + 2y) = 150<br>
+            বা, x − 3 + 2y = 75 ➔ x + 2y = 78 ..... (ii)<br><br>
+            সমীকরণ (ii) থেকে (i) বিয়োগ করে পাই:<br>
+            (x + 2y) − (x + y) = 78 − 60<br>
+            বা, y = 18 মিটার (প্রস্থ)<br><br>
+            এখন, y এর মান (i) এ বসিয়ে পাই:<br>
+            x + 18 = 60 ➔ x = 42 মিটার (দৈর্ঘ্য)<br><br>
+            ∴ বাগানের ক্ষেত্রফল = (দৈর্ঘ্য × প্রস্থ) = (42 × 18) = 756 বর্গমিটার<br>
+            প্রতি বর্গমিটারে ৭ টাকা হারে সারের মোট খরচ = 756 × 7 = <span class="highlight-res">৫,২৯২ টাকা</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: সার বাবদ মোট ৫,২৯২ টাকা খরচ হবে।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) - পিথাগোরাস ও সমকোণী ত্রিভুজ -->
+    <div class="card-3d-wrap theme-amber anim-slide-l" style="grid-column: 1 / -1;">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span>
+          <div class="question-text">একটি সমকোণী ত্রিভুজের অতিভুজ ২৫ মিটার। এর ক্ষুদ্রতম বাহুটি অপর বাহুর ৩/৪ অংশ হলে, ত্রিভুজটির ক্ষেত্রফল নির্ণয় করুন।</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">সমাধান দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">পিথাগোরাসের উপপাদ্য</span>
+          <div class="math-step-box">
+            ধরি, সমকোণী ত্রিভুজটির অপর বাহু = x মিটার।<br>
+            ক্ষুদ্রতম বাহু = (৩/৪ × x) = 3x/4 মিটার এবং অতিভুজ = ২৫ মিটার।<br><br>
+            পিথাগোরাসের সূত্রানুসারে:<br>
+            x² + (3x/4)² = ২৫²<br>
+            বা, x² + 9x²/16 = ৬২৫<br>
+            বা, 25x²/16 = ৬২৫<br>
+            বা, x² = (৬২৫ × ১৬) / ২৫ = ৪০০<br>
+            বা, x = √৪০০ = <b>২০ মিটার</b> (ভূমি/অপর বাহু)<br><br>
+            ∴ ক্ষুদ্রতম বাহু (উচ্চতা) = (৩ × ২০) / ৪ = <b>১৫ মিটার</b><br>
+            ∴ ত্রিভুজটির ক্ষেত্রফল = ½ × ভূমি × উচ্চতা = ½ × ২০ × ১৫ = <span class="highlight-res">১৫০ বর্গমিটার</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ত্রিভুজটির ক্ষেত্রফল ১৫০ বর্গমিটার।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) - অঙ্ক কতটি -->
+    <div class="card-3d-wrap theme-emerald anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+          <div class="question-text">গণিতে অঙ্ক কতটি ও কী কী?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">সংখ্যা পদ্ধতি</span>
+          <div>উত্তর: <span class="highlight-res">১০টি; যথা: ০, ১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯।</span></div>
+          <div style="font-size:0.9rem; color:#94a3b8; margin-top:6px;">এর মধ্যে '০' কে অভাবজ্ঞাপক বা সাহায্যকারী অঙ্ক এবং ১ থেকে ৯ পর্যন্ত ৯টিকে সার্থক অঙ্ক বলা হয়।</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) - অতিভুজের বিপরীত কোণ -->
+    <div class="card-3d-wrap theme-emerald anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+          <div class="question-text">সমকোণী ত্রিভুজে অতিভুজের বিপরীত কোণ কত ডিগ্রি?</div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">জ্যামিতি</span>
+          <div>উত্তর: <span class="highlight-res">৯০° (সমকোণ)</span></div>
+          <div style="font-size:0.9rem; color:#94a3b8; margin-top:6px;">সমকোণী ত্রিভুজের বৃহত্তম বাহু হলো অতিভুজ এবং তার ঠিক বিপরীত কোণটি সমকোণ (৯০°)।</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) - সূচক ও দশমিক হিসাব -->
+    <div class="card-3d-wrap theme-emerald anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+          <div class="question-text">মান নির্ণয়: <strong>(০.১) + (০.১)² + (০.১)⁰ = কত?</strong></div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">হিসাব দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">দশমিক ও সূচক</span>
+          <div class="math-step-box">
+            (০.১) = ০.১<br>
+            (০.১)² = ০.০১<br>
+            (০.১)⁰ = ১  [যেহেতু যেকোনো অশূন্য সংখ্যার ঘাত শূন্য হলে মান ১ হয়]<br><br>
+            যোগফল = ০.১ + ০.০১ + ১ = <span class="highlight-res">১.১১১</span>
+          </div>
+          <p style="color:#34d399; font-weight:700;">উত্তর: ১.১১১</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="supervision-title">সার্বিক তত্ত্বাবধানে ও দিকনির্দেশনায়</div>
+    <div class="supervision-brand">BILAS ACADEMY</div>
+    <div style="font-size:0.88rem; color:#64748b; margin-top:10px;">
+      © সর্বস্বত্ব সংরক্ষিত — বিলাস একাডেমি (Mathematics Special Topic-Wise Bank)
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  function toggleCard(button) {
+    const card = button.closest('.card-3d-wrap');
+    card.classList.toggle('active');
+    updateStats();
+  }
+
+  function toggleAllCards(open) {
+    const cards = document.querySelectorAll('.card-3d-wrap');
+    cards.forEach(card => {
+      if (open) {
+        card.classList.add('active');
+      } else {
+        card.classList.remove('active');
+      }
+    });
+    updateStats();
+  }
+
+  function updateStats() {
+    const total = document.querySelectorAll('.card-3d-wrap').length;
+    const opened = document.querySelectorAll('.card-3d-wrap.active').length;
+    const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+    const toBn = (n) => n.toString().split('').map(d => banglaDigits[d] || d).join('');
+    
+    const totalEl = document.getElementById('totalCards');
+    const openedEl = document.getElementById('openedCount');
+    if (totalEl) totalEl.innerText = toBn(total);
+    if (openedEl) openedEl.innerText = toBn(opened);
+  }
+
+  window.addEventListener('DOMContentLoaded', updateStats);
+</script>
+
+</body>
+</html>

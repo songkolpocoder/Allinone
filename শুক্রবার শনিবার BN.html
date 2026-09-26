@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বাংলা স্পেশাল মাস্টার ব্যাংক - ৫টি সরকারি চাকরির লিখিত পরীক্ষা | BILAS ACADEMY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-dark: #070b14;
+    --card-surface: rgba(18, 25, 42, 0.85);
+    --border-light: rgba(255, 255, 255, 0.08);
+    --primary-accent: #6366f1;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: radial-gradient(circle at 50% 0%, #171c36 0%, #080c16 65%, #04060b 100%);
+    color: var(--text-main);
+    min-height: 100vh;
+    padding: 30px 14px 80px;
+    perspective: 1400px;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* Master Header */
+  .master-header {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.75), rgba(15, 23, 42, 0.9));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    border-radius: 26px;
+    padding: 35px 22px;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7),
+                0 0 30px rgba(99, 102, 241, 0.15),
+                inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .master-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.12) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .badge-main {
+    display: inline-block;
+    padding: 6px 22px;
+    background: linear-gradient(135deg, #ec4899, #8b5cf6, #3b82f6);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    letter-spacing: 0.6px;
+    box-shadow: 0 4px 18px rgba(139, 92, 246, 0.4);
+  }
+
+  h1 {
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #ffffff 30%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .post-desc {
+    font-size: 1.15rem;
+    color: #38bdf8;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .exam-meta-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .meta-tag {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 14px;
+    border-radius: 12px;
+    font-size: 0.86rem;
+    color: #cbd5e1;
+    font-weight: 500;
+  }
+
+  .supervisor-tag {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.12);
+    font-size: 0.95rem;
+    color: #94a3b8;
+  }
+
+  .brand-pill {
+    display: inline-block;
+    background: linear-gradient(135deg, #0284c7, #38bdf8);
+    color: #080c16;
+    font-weight: 800;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-left: 6px;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Control Panel */
+  .control-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 26px;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(14px);
+    padding: 12px 20px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .stat-tracker {
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: #38bdf8;
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn-ui {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .btn-open-all {
+    background: #6366f1;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  }
+  .btn-open-all:hover { transform: translateY(-2px) scale(1.03); background: #4f46e5; }
+
+  .btn-close-all {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .btn-close-all:hover { transform: translateY(-2px) scale(1.03); background: rgba(255, 255, 255, 0.16); }
+
+  /* Quick Navigation Chips */
+  .nav-scroller {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    scrollbar-width: thin;
+  }
+
+  .nav-chip {
+    white-space: nowrap;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #cbd5e1;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .nav-chip:hover {
+    background: #38bdf8;
+    color: #080c16;
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+  }
+
+  /* Topic Headings */
+  .topic-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(99, 102, 241, 0.35);
+  }
+
+  .topic-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .topic-badge-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.35);
+  }
+
+  .topic-title {
+    font-family: 'Noto Serif Bengali', serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #f1f5f9;
+  }
+
+  .topic-count {
+    background: rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  /* Grid Layouts */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .cards-grid-single {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  /* 3D Interactive Card */
+  .card-3d-wrap {
+    border-radius: 16px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(20, 28, 46, 0.85);
+  }
+
+  .card-3d-wrap:hover {
+    transform: translateY(-3px);
+  }
+
+  /* Theme Palette System */
+  .theme-cyan { --t-color: #06b6d4; --t-glow: rgba(6, 182, 212, 0.35); --t-bg: rgba(6, 182, 212, 0.12); }
+  .theme-purple { --t-color: #a855f7; --t-glow: rgba(168, 85, 247, 0.35); --t-bg: rgba(168, 85, 247, 0.12); }
+  .theme-amber { --t-color: #f59e0b; --t-glow: rgba(245, 158, 11, 0.35); --t-bg: rgba(245, 158, 11, 0.12); }
+  .theme-emerald { --t-color: #10b981; --t-glow: rgba(16, 185, 129, 0.35); --t-bg: rgba(16, 185, 129, 0.12); }
+  .theme-rose { --t-color: #f43f5e; --t-glow: rgba(244, 63, 94, 0.35); --t-bg: rgba(244, 63, 94, 0.12); }
+  .theme-blue { --t-color: #3b82f6; --t-glow: rgba(59, 130, 246, 0.35); --t-bg: rgba(59, 130, 246, 0.12); }
+
+  .card-3d-wrap {
+    border-left: 4px solid var(--t-color);
+  }
+
+  .card-3d-wrap:hover {
+    box-shadow: 0 10px 24px -5px var(--t-glow);
+  }
+
+  .card-3d-wrap.active {
+    border-color: var(--t-color);
+    box-shadow: 0 16px 36px -8px var(--t-glow);
+  }
+
+  /* Card Trigger Button */
+  .card-trigger {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.02rem;
+    color: var(--text-main);
+    font-weight: 600;
+    text-align: left;
+    gap: 12px;
+    user-select: none;
+  }
+
+  .trigger-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+  }
+
+  .source-pill {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--t-color);
+    background: var(--t-bg);
+    border: 1px solid var(--t-color);
+    padding: 1px 8px;
+    border-radius: 6px;
+    align-self: flex-start;
+  }
+
+  .question-text {
+    line-height: 1.5;
+    font-size: 1.03rem;
+    color: #f8fafc;
+  }
+
+  .trigger-action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .action-hint {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.25s ease;
+  }
+
+  .card-3d-wrap.active .action-hint {
+    background: var(--t-color);
+    color: #fff;
+  }
+
+  .arrow-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s;
+  }
+
+  .arrow-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: #94a3b8;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .card-3d-wrap.active .arrow-btn {
+    transform: rotate(180deg);
+    background: var(--t-color);
+  }
+
+  .card-3d-wrap.active .arrow-btn svg {
+    stroke: #ffffff;
+  }
+
+  /* 3D Animation Modes for Answer Dropdown */
+  .ans-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* 1. Zoom In 3D Effect */
+  .anim-zoom .ans-wrapper {
+    transform: scale(0.85) translateZ(-60px);
+  }
+  .anim-zoom.active .ans-wrapper {
+    max-height: 1000px;
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+
+  /* 2. Slide from Right 3D Effect */
+  .anim-slide-r .ans-wrapper {
+    transform: translateX(45px) rotateY(-18deg);
+  }
+  .anim-slide-r.active .ans-wrapper {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  /* 3. Slide from Left 3D Effect */
+  .anim-slide-l .ans-wrapper {
+    transform: translateX(-45px) rotateY(18deg);
+  }
+  .anim-slide-l.active .ans-wrapper {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+
+  /* 4. 3D Flip Down Effect */
+  .anim-flip .ans-wrapper {
+    transform: perspective(600px) rotateX(-35deg) translateY(-10px);
+    transform-origin: top;
+  }
+  .anim-flip.active .ans-wrapper {
+    max-height: 1000px;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg) translateY(0);
+  }
+
+  .ans-content {
+    padding: 18px 20px 20px;
+    background: rgba(10, 15, 26, 0.92);
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: #e2e8f0;
+  }
+
+  .ans-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--t-bg);
+    color: var(--t-color);
+    border: 1px solid var(--t-color);
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+
+  .highlight-res {
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .explanation-note {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.08);
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 35px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  }
+
+  .supervision-title {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    font-weight: 500;
+  }
+
+  .supervision-brand {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #60a5fa, #c084fc, #f43f5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-top: 6px;
+    text-shadow: 0 0 25px rgba(192, 132, 252, 0.4);
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 1.7rem; }
+    .post-desc { font-size: 1.05rem; }
+    .card-trigger { padding: 14px 14px; }
+    .action-hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="master-header">
+    <span class="badge-main">🌟 বিষয়ভিত্তিক বিশেষ সংস্করণ (Topic-Wise Master Series)</span>
+    <h1>বাংলা ব্যাকরণ ও সাহিত্য মাস্টার ব্যাংক</h1>
+    <div class="post-desc">বিগত ৫টি সরকারি চাকরির লিখিত পরীক্ষার শতভাগ সমাধান সংকলন</div>
+    <div class="exam-meta-grid">
+      <span class="meta-tag">🏛️ বিভাগীয় কমিশনারের কার্যালয় সিলেট</span>
+      <span class="meta-tag">⚖️ বাংলাদেশ জুডিসিয়াল সার্ভিস কমিশন (নৈশ প্রহরী)</span>
+      <span class="meta-tag">💻 বাংলাদেশ জুডিসিয়াল সার্ভিস কমিশন (অফিস সহকারী)</span>
+      <span class="meta-tag">🏢 মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span>
+      <span class="meta-tag">📜 মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span>
+      <span class="meta-tag">🔬 BSTI (ইউডিসি কাম ক্যাশিয়ার)</span>
+    </div>
+    <div class="supervisor-tag">
+      সার্বিক তত্ত্বাবধানে: <strong style="color:#f8fafc; font-size:1.05rem;">বিলাস একাডেমি</strong>
+      <span class="brand-pill">BILAS ACADEMY</span>
+    </div>
+  </div>
+
+  <!-- Control & Stats Panel -->
+  <div class="control-panel">
+    <div class="stat-tracker">
+      📚 সর্বমোট বাংলা প্রশ্ন: <span id="totalCards">০</span> টি | উন্মুক্ত: <span id="openedCount">০</span> টি
+    </div>
+    <div class="btn-group">
+      <button class="btn-ui btn-open-all" onclick="toggleAllCards(true)">সব খুলুন 🔓</button>
+      <button class="btn-ui btn-close-all" onclick="toggleAllCards(false)">সব লুকান 🔒</button>
+    </div>
+  </div>
+
+  <!-- Quick Topic Navigation -->
+  <div class="nav-scroller">
+    <a href="#topic-sandhi" class="nav-chip">১. সন্ধি বিচ্ছেদ</a>
+    <a href="#topic-banan" class="nav-chip">২. বানান শুদ্ধিকরণ</a>
+    <a href="#topic-samas" class="nav-chip">৩. সমাস ও ব্যাসবাক্য</a>
+    <a href="#topic-ek-kothay" class="nav-chip">৪. এক কথায় প্রকাশ</a>
+    <a href="#topic-karak" class="nav-chip">৫. কারক ও বিভক্তি</a>
+    <a href="#topic-biporit" class="nav-chip">৬. বিপরীত শব্দ</a>
+    <a href="#topic-bagdhara" class="nav-chip">৭. বাগধারা ও প্রবাদ</a>
+    <a href="#topic-somarthok" class="nav-chip">৮. সমার্থক শব্দ</a>
+    <a href="#topic-bhab" class="nav-chip">৯. ভাব সম্প্রসারণ ও অনুচ্ছেদ</a>
+    <a href="#topic-abedon" class="nav-chip">১০. আবেদনপত্র লিখন</a>
+    <a href="#topic-sahitya" class="nav-chip">১১. বাংলা সাহিত্য ও বিবিধ</a>
+  </div>
+
+  <!-- ==================== ১. সন্ধি বিচ্ছেদ ==================== -->
+  <div id="topic-sandhi" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০১</div>
+      <div class="topic-title">সন্ধি বিচ্ছেদ করুন</div>
+    </div>
+    <span class="topic-count">২৭টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <!-- সিলেট -->
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>দুস্থ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিসর্গ সন্ধি</span><div>দুস্থ = <span class="highlight-res">দুঃ + থ</span> <em>(বা দুঃ + স্থ)</em></div><div class="explanation-note">বিসর্গের পর ত/থ থাকলে বিসর্গের স্থলে দন্ত্য-স হয়।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>শঙ্কা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ব্যঞ্জনসন্ধি</span><div>শঙ্কা = <span class="highlight-res">শম্ + কা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>নিরীহ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিসর্গ সন্ধি</span><div>নিরীহ = <span class="highlight-res">নিঃ + ঈহ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>ঈশ্বর</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ব্যঞ্জনসন্ধি</span><div>ঈশ্বর = <span class="highlight-res">ঈশ্ + বর</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>অহর্নিশ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিসর্গ সন্ধি</span><div>অহর্নিশ = <span class="highlight-res">অহঃ + নিশা</span></div></div></div>
+    </div>
+
+    <!-- জুডিসিয়াল সার্ভিস (অফিস সহকারী) -->
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল সার্ভিস (অফিস সহকারী)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>নোনতা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বাংলা সন্ধি</span><div>নোনতা = <span class="highlight-res">নুন + তা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল সার্ভিস (অফিস সহকারী)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>নবীন</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">স্বরসন্ধি</span><div>নবীন = <span class="highlight-res">নব + ঈন</span></div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) -->
+    <div class="card-3d-wrap theme-emerald anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>পরীক্ষা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">স্বরসন্ধি</span><div>পরীক্ষা = <span class="highlight-res">পরি + ঈক্ষা</span></div><div class="explanation-note">হ্রস্ব-ই + দীর্ঘ-ঈ মিলে দীর্ঘ-ঈ কার (পরীক্ষা) হয়।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>সদুপায়</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ব্যঞ্জনসন্ধি</span><div>সদুপায় = <span class="highlight-res">সৎ + উপায়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>বৃহস্পতি</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">নিপাতনে সিদ্ধ</span><div>বৃহস্পতি = <span class="highlight-res">বৃহৎ + পতি</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>নাবিক</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">স্বরসন্ধি</span><div>নাবিক = <span class="highlight-res">নৌ + ইক</span></div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) -->
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>অভ্যুত্থান</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">স্বরসন্ধি</span><div>অভ্যুত্থান = <span class="highlight-res">অভি + উত্থান</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">সন্ধি / প্রত্যয়: <strong>দর্শনীয়</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কৃৎ প্রত্যয়</span><div>দর্শনীয় = <span class="highlight-res">দৃশ্ + অনীয়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>সংকল্প</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ব্যঞ্জনসন্ধি</span><div>সংকল্প = <span class="highlight-res">সম্ + কল্প</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">সন্ধি / প্রত্যয়: <strong>মুক্ত</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কৃৎ প্রত্যয়</span><div>মুক্ত = <span class="highlight-res">মুচ্ + ত</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">সন্ধি / প্রত্যয়: <strong>ঐতিহ্য</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">তদ্ধিত প্রত্যয়</span><div>ঐতিহ্য = <span class="highlight-res">ইতিহ্ + য</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">সন্ধি / প্রত্যয়: <strong>মিথ্যা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">তদ্ধিত প্রত্যয়</span><div>মিথ্যা = <span class="highlight-res">মিথ্ + ইয়া</span></div></div></div>
+    </div>
+
+    <!-- BSTI -->
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>ভাবুক</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">স্বরসন্ধি</span><div>ভাবুক = <span class="highlight-res">ভৌ + উক</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>লবণ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">স্বরসন্ধি</span><div>লবণ = <span class="highlight-res">লো + অন</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>মনীষা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">নিপাতনে সিদ্ধ</span><div>মনীষা = <span class="highlight-res">মনস্ + ঈষা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>দ্যুলোক</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ব্যঞ্জনসন্ধি</span><div>দ্যুলোক = <span class="highlight-res">দিব্ + লোক</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>উদ্ধার</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ব্যঞ্জনসন্ধি</span><div>উদ্ধার = <span class="highlight-res">উৎ + হার</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>পরস্পর</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">নিপাতনে সিদ্ধ</span><div>পরস্পর = <span class="highlight-res">পর + পর</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি / প্রত্যয়: <strong>বর্জন</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কৃৎ প্রত্যয়</span><div>বর্জন = <span class="highlight-res">বৃজ্ + অন</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>বৃষ্টি</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ব্যঞ্জনসন্ধি</span><div>বৃষ্টি = <span class="highlight-res">বৃষ্ + তি</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সন্ধি বিচ্ছেদ: <strong>চয়ন</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">স্বরসন্ধি</span><div>চয়ন = <span class="highlight-res">চে + অন</span></div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ২. বানান শুদ্ধিকরণ ==================== -->
+  <div id="topic-banan" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০২</div>
+      <div class="topic-title">বানান শুদ্ধিকরণ (শুদ্ধ রূপ)</div>
+    </div>
+    <span class="topic-count">২৭টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <!-- জুডিসিয়াল নৈশ প্রহরী -->
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">প্রয়োজনিয়</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">প্রয়োজনীয়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">সাস্ত্য</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">স্বাস্থ্য</span></div></div></div>
+    </div>
+
+    <!-- জুডিসিয়াল অফিস সহকারী -->
+    <div class="card-3d-wrap theme-purple anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">অধীনস্থ</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">অধীন</span></div><div class="explanation-note">অধীন শব্দের সাথেই অনুগত অর্থ প্রকাশ পায়, 'স্থ' প্রত্যয় বাহুল্য দোষ।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">ভৌগলিক</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">ভৌগোলিক</span></div><div class="explanation-note">ভূগোল + ষ্ণিক/ইক = ভৌগোলিক (ও-কার যুক্ত)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">ষ্টেশন</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">স্টেশন</span></div><div class="explanation-note">বিদেশি শব্দে কখনও মূর্ধন্য-ষ হয় না, দন্ত্য-স হয়।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">ইতিমধ্যে</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">ইতোমধ্যে</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">পৈত্রিক</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">পৈতৃক</span></div><div class="explanation-note">পিতৃ + ইক = পৈতৃক (ঋ-কার যুক্ত)।</div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) -->
+    <div class="card-3d-wrap theme-emerald anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">মনমালিন্য</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">মনোমালিন্য</span></div><div class="explanation-note">মনঃ + মালিন্য = মনোমালিন্য (ও-কার যুক্ত)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">অধ্যায়ন</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">অধ্যয়ন</span></div><div class="explanation-note">অধি + অয়ন = অধ্যয়ন (আ-কার হয় না)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">আকাংখা</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">আকাঙ্ক্ষা</span></div><div class="explanation-note">যুক্তবর্ণ ঙ্ক্ষ (ঙ + ক্ষ) যুক্ত হয়ে আকাঙ্ক্ষা।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">দুর্ণীতি</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">দুর্নীতি</span></div><div class="explanation-note">রেফের পর দন্ত্য-ন হয় (দুর্নীতি)।</div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) -->
+    <div class="card-3d-wrap theme-amber anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">এতদ্বারা</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">এতদ্দ্বারা</span></div><div class="explanation-note">সন্ধির নিয়মে দ্ + দ্ = দ্দ্ব (দ-এ ব-ফলা)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">দূর্বিসহ</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">দুর্বিষহ</span></div><div class="explanation-note">দুঃ + বিষহ = দুর্বিষহ (হ্রস্ব উ-কার ও মূর্ধন্য-ষ)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">ভাসন</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">ভাষণ</span></div><div class="explanation-note">বক্তব্য অর্থে মূর্ধন্য-ষ ও মূর্ধন্য-ণ যুক্ত 'ভাষণ'।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">সৌজন্যতা</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">সৌজন্য</span> <em>(বা সুজনতা)</em></div><div class="explanation-note">সৌজন্য নিজেই ভাববাচক বিশেষ্য, 'তা' প্রত্যয় বাহুল্য দোষ।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">ব্যাতীত</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">ব্যতীত</span></div></div></div>
+    </div>
+
+    <!-- BSTI -->
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">মন্ত্রীপরিষদ</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">মন্ত্রিপরিষদ</span></div><div class="explanation-note">সমাসবদ্ধ হলে 'মন্ত্রী' শব্দের দীর্ঘ-ঈ হ্রস্ব-ই কারে পরিণত হয়।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">শিরোচ্ছেদ</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">শিরশ্ছেদ</span></div><div class="explanation-note">শিরঃ + ছেদ = শিরশ্ছেদ।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">জাতিয়তা</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">জাতীয়তা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">বীভীষীকা</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">বিভীষিকা</span></div><div class="explanation-note">হ্রস্ব-ই, দীর্ঘ-ঈ, হ্রস্ব-ই ক্রমানুসারে (বি-ভী-ষি-কা)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">মূর্হুমুহ</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">মুহুর্মুহু</span></div><div class="explanation-note">সবগুলো হ্রস্ব উ-কার (মু-হুর-মু-হু)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">রৌদ্রকোরোজ্জ্বল</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">রৌদ্রকরোজ্জ্বল</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">পুর্ণজাগরন</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">পুনর্জাগরণ</span></div><div class="explanation-note">ণ-ত্ব বিধানে র-এর পর মূর্ধন্য-ণ হয়।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">বাদ্ধনীয়</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">বাঞ্ছনীয়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">কোথপোকথোন</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">কথোপকথন</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অশুদ্ধ: <span style="color:#f87171;">শুশ্রূসা</span></div></div>
+        <div class="trigger-action"><span class="action-hint">শুদ্ধ রূপ</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">শুদ্ধ বানান</span><div>শুদ্ধ রূপ: <span class="highlight-res">শুশ্রূষা</span></div><div class="explanation-note">তালব্য-শ হ্রস্ব-উ, শ্র-এ দীর্ঘ-ঊ এবং মূর্ধন্য-ষ (শু-শ্রূ-ষা)।</div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৩. সমাস ও ব্যাসবাক্য ==================== -->
+  <div id="topic-samas" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৩</div>
+      <div class="topic-title">ব্যাসবাক্যসহ সমাস নির্ণয়</div>
+    </div>
+    <span class="topic-count">১৭টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <!-- সিলেট -->
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সমাস নির্ণয়: <strong>ভক্তিসুধা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">রূপক কর্মধারয় সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">ভক্তি রূপ সুধা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সমাস নির্ণয়: <strong>নবান্ন</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কর্মধারয় সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">নব যে অন্ন</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সমাস নির্ণয়: <strong>কবিগুরু</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ষষ্ঠী তৎপুরুষ সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">কবিদের গুরু</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সমাস নির্ণয়: <strong>কলুরবলদ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">অলুক তৎপুরুষ সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">কলুর বলদ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">সমাস নির্ণয়: <strong>সোনামুখ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">উপমিত কর্মধারয় সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">মুখ সোনার ন্যায়</span></div></div></div>
+    </div>
+
+    <!-- জুডিসিয়াল অফিস সহকারী -->
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">সমাস নির্ণয়: <strong>দম্পতি</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">দ্বন্দ্ব সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">জায়া ও পতি</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">সমাস নির্ণয়: <strong>চা-বাগান</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ষষ্ঠী তৎপুরুষ সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">চায়ের বাগান</span></div></div></div>
+    </div>
+
+    <!-- BSTI -->
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>একগুঁয়ে</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বহুব্রীহি সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">এক গোঁ যার</span> (সমানাধিকরণ বহুব্রীহি সমাস)</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>রাজপথ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ষষ্ঠী তৎপুরুষ সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">পথের রাজা</span> (পরপদ রাজা পূর্বে আসে)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>চিরসুখী</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">দ্বিতীয়া তৎপুরুষ সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">চিরকাল ব্যাপিয়া সুখী</span> (ব্যাপ্তি অর্থে)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>আপাদমস্তক</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">অব্যয়ীভাব সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">পা (পদ) থেকে মাথা পর্যন্ত</span> (সীমা বা ব্যাপ্তি অর্থে)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>অন্তরীপ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">নিপাতনে সিদ্ধ বহুব্রীহি</span><div>ব্যাসবাক্য: <span class="highlight-res">অন্তর্গত অপ (জল) যার</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>প্রত্যুত্তর</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">অব্যয়ীভাব সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">উত্তরের বিপরীত</span> (বিপরীত অর্থে 'প্রতি' উপসর্গ)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>সিলমোহর</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">দ্বন্দ্ব সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">সিল ও মোহর</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>মৃগশিশু</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">ষষ্ঠী তৎপুরুষ সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">মৃগীর শিশু</span> (স্ত্রীবাচক পূর্বপদ পুরুষবাচক হয়)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>মধুমখা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">তৃতীয়া তৎপুরুষ সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">মধু দিয়ে মাখা</span> (দ্বারা/দিয়ে লোপ)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">সমাস নির্ণয়: <strong>অনুদৈর্ঘ্য</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">অব্যয়ীভাব সমাস</span><div>ব্যাসবাক্য: <span class="highlight-res">দৈর্ঘ্যের অনু</span> (পশ্চাৎ বা অনুগমন অর্থে)।</div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৪. এক কথায় প্রকাশ ==================== -->
+  <div id="topic-ek-kothay" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৪</div>
+      <div class="topic-title">এক কথায় প্রকাশ (বাক্য সংকোচন)</div>
+    </div>
+    <span class="topic-count">২১টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <!-- জুডিসিয়াল অফিস সহকারী -->
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">এক কথায় প্রকাশ: <strong>দেখার ইচ্ছা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">দিদৃক্ষা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">এক কথায় প্রকাশ: <strong>জনগণের বাসস্থান</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">জনবসতি</span></div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) -->
+    <div class="card-3d-wrap theme-emerald anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">এক কথায় প্রকাশ: <strong>যা বলা হয়নি</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">অনুক্ত</span> <em>(যা বলা হবে = বক্ষ্যমাণ)</em></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">এক কথায় প্রকাশ: <strong>যার দু'হাত সমান চলে</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">সব্যসাচী</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">এক কথায় প্রকাশ: <strong>যা পূর্বে দেখা যায় নি</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">অদৃষ্টপূর্ব</span></div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) -->
+    <div class="card-3d-wrap theme-amber anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">এক কথায় প্রকাশ: <strong>অগভীর সতর্ক নিদ্রা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">কাকনিদ্রা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">এক কথায় প্রকাশ: <strong>কথায় বর্ণনা করা যায় না যা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">অবর্ণনীয়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">এক কথায় প্রকাশ: <strong>অর্থহীন উক্তি</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">প্রলাপ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">এক কথায় প্রকাশ: <strong>দিনের প্রথম ভাগ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">পূর্বাহ্ণ</span> (হ্ণ যুক্তবর্ণ)</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">এক কথায় প্রকাশ: <strong>পা থেকে মাথা পর্যন্ত</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">আপাদমস্তক</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">এক কথায় প্রকাশ: <strong>বেশি কথা বলে যে</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">বাচাল</span></div></div></div>
+    </div>
+
+    <!-- BSTI -->
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>সাপের খোলস</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">নির্মোক</span> <em>(বা কঞ্চুক)</em></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>দান করিবার ইচ্ছা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">দিৎসা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>দুই নদীর মধ্যবর্তী স্থান</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">দোয়াব</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>সরোবরে জন্মে যা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">সরোজ</span> (পদ্ম)</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>দেখার যোগ্য</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">দর্শনীয়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>পতিপুত্রহীনা নারী</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">অবীরা</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>যে বিষয়ে কোনো বিতর্ক নেই</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">অবিসংবাদী</span> <em>(বা অবিসংবাদিত)</em></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>উচ্চ স্থানে অবস্থিত ক্ষুদ্র কুটির</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">টঙ্গি</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>সমুদ্রের ঢেউয়ের শব্দ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">কল্লোল</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">এক কথায় প্রকাশ: <strong>শুকনো পাতার শব্দ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">এক কথায় প্রকাশ</span><div>উত্তর: <span class="highlight-res">মর্মর</span></div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৫. কারক ও বিভক্তি ==================== -->
+  <div id="topic-karak" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৫</div>
+      <div class="topic-title">কারক ও বিভক্তি নির্ণয়</div>
+    </div>
+    <span class="topic-count">৬টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card-3d-wrap theme-amber anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text"><u>অর্থে</u>ই অনর্থের মূল।</div></div>
+        <div class="trigger-action"><span class="action-hint">কারক দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কারক ও বিভক্তি</span><div>উত্তর: <span class="highlight-res">করণ কারকে ৭মী বিভক্তি</span></div><div class="explanation-note">অর্থের দ্বারা অনর্থ সৃষ্টি হয় বলে এটি করণে ৭মী (মূল নোটে অপাদানও উল্লেখ থাকে)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text"><u>মাতাপিতার</u> সেবা করো।</div></div>
+        <div class="trigger-action"><span class="action-hint">কারক দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কারক ও বিভক্তি</span><div>উত্তর: <span class="highlight-res">কর্মকারকে ৬ষ্ঠী বিভক্তি</span></div><div class="explanation-note">কাকে সেবা করবে? মাতাপিতাকে (র/এর = ৬ষ্ঠী)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">বিকেল <u>চারটায়</u> অফিস ছুটি হয়।</div></div>
+        <div class="trigger-action"><span class="action-hint">কারক দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কারক ও বিভক্তি</span><div>উত্তর: <span class="highlight-res">অধিকরণ কারকে ৭মী বিভক্তি</span></div><div class="explanation-note">নির্দিষ্ট সময় বা কাল নির্দেশ করায় কালাধিকরণে ৭মী (য়)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text"><u>তার</u> দেখা পাওয়া দুষ্কর।</div></div>
+        <div class="trigger-action"><span class="action-hint">কারক দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কারক ও বিভক্তি</span><div>উত্তর: <span class="highlight-res">কর্মকারকে ৬ষ্ঠী বিভক্তি</span></div><div class="explanation-note">কাকে দেখা পাওয়া দুষ্কর? তাকে (তার = ৬ষ্ঠী)।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">লোকটি <u>কানে</u> খাটো।</div></div>
+        <div class="trigger-action"><span class="action-hint">কারক দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কারক ও বিভক্তি</span><div>উত্তর: <span class="highlight-res">করণ কারকে ৭মী বিভক্তি</span></div><div class="explanation-note">শারীরিক অঙ্গহানি বা উপায় নির্দেশ করায় করণ কারক।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text"><u>দশে</u> মিলে করি কাজ।</div></div>
+        <div class="trigger-action"><span class="action-hint">কারক দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কারক ও বিভক্তি</span><div>উত্তর: <span class="highlight-res">কর্তৃকারকে ৭মী বিভক্তি</span></div><div class="explanation-note">কাজটি কারা করে? দশজনে মিলে, কর্তায় 'এ' বিভক্তি (৭মী)।</div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৬. বিপরীত শব্দ ==================== -->
+  <div id="topic-biporit" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৬</div>
+      <div class="topic-title">বিপরীত শব্দ লিখুন</div>
+    </div>
+    <span class="topic-count">১৩টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <!-- সিলেট -->
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">বিপরীত শব্দ: <strong>ওস্তাদ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>ওস্তাদ ➔ <span class="highlight-res">সাগরেদ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">বিপরীত শব্দ: <strong>কল্পনা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>কল্পনা ➔ <span class="highlight-res">বাস্তব</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">বিপরীত শব্দ: <strong>আবির্ভাব</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>আবির্ভাব ➔ <span class="highlight-res">তিরোভাব / তিরোধান</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">বিপরীত শব্দ: <strong>অণু</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>অণু ➔ <span class="highlight-res">বৃহৎ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">বিপরীত শব্দ: <strong>কৃশ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>কৃশ ➔ <span class="highlight-res">স্থূল</span></div></div></div>
+    </div>
+
+    <!-- জুডিসিয়াল নৈশ প্রহরী -->
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">বিপরীত শব্দ: <strong>জয়</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>জয় ➔ <span class="highlight-res">পরাজয়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">বিপরীত শব্দ: <strong>তরল</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>তরল ➔ <span class="highlight-res">কঠিন, ঘন</span></div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ) -->
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">বিপরীত শব্দ: <strong>বন্ধুর</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>বন্ধুর ➔ <span class="highlight-res">মসৃণ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">বিপরীত শব্দ: <strong>আত্মীয়</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>আত্মীয় ➔ <span class="highlight-res">অনাত্মীয়</span> <em>(বা পর)</em></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">বিপরীত শব্দ: <strong>সহোদর</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>সহোদর ➔ <span class="highlight-res">বৈমাত্রেয়</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">বিপরীত শব্দ: <strong>বিজ্ঞ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>বিজ্ঞ ➔ <span class="highlight-res">অজ্ঞ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">বিপরীত শব্দ: <strong>অগ্র</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>অগ্র ➔ <span class="highlight-res">পশ্চাৎ</span></div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">বিপরীত শব্দ: <strong>কঠোর</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বিপরীত শব্দ</span><div>কঠোর ➔ <span class="highlight-res">কোমল</span></div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৭. বাগধারা ও প্রবাদ-প্রবচন ==================== -->
+  <div id="topic-bagdhara" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৭</div>
+      <div class="topic-title">বাগধারা ও প্রবাদ-প্রবচন</div>
+    </div>
+    <span class="topic-count">৬টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <!-- জুডিসিয়াল নৈশ প্রহরী -->
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">প্রবাদের অর্থ: <strong>'সততাই সর্বোৎকৃষ্ট পন্থা'</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">প্রবাদের তাৎপর্য</span><div class="highlight-res">জীবনে চলার পথে সর্বদা সত্য ও সৎ পথ অবলম্বন করলে জীবন সুন্দর ও কল্যাণকর হয়।</div><div class="explanation-note">ইংরেজি প্রতিশব্দ: Honesty is the best policy.</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">বাগধারার অর্থ ও বাক্য: <strong>কান পাতলা</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বাগধারা</span><div>• <strong>অর্থ:</strong> <span class="highlight-res">সহজেই বিশ্বাসপ্রবণ</span><br>• <strong>বাক্য:</strong> মাহাবুব সাহেবের মতো এমন <em>কান পাতলা</em> লোক আমি দ্বিতীয়টি দেখিনি।</div></div></div>
+    </div>
+
+    <!-- মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক) -->
+    <div class="card-3d-wrap theme-emerald anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">বাগধারার অর্থ ও বাক্য: <strong>গুড়ে বালি</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বাগধারা</span><div>• <strong>অর্থ:</strong> <span class="highlight-res">আশায় নৈরাশ</span><br>• <strong>বাক্য:</strong> আশা করেছিলাম চাচার সম্পত্তি পাব, এখন দেখছি তা <em>গুড়ে বালি</em>।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">বাগধারার অর্থ ও বাক্য: <strong>ডুমুরের ফুল</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বাগধারা</span><div>• <strong>অর্থ:</strong> <span class="highlight-res">দুর্লভ বস্তু</span><br>• <strong>বাক্য:</strong> পরীক্ষায় ভাল করে সোহেল এখন <em>ডুমুরের ফুল</em> হয়ে উঠেছে।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">বাগধারার অর্থ ও বাক্য: <strong>জিলাপির প্যাঁচ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বাগধারা</span><div>• <strong>অর্থ:</strong> <span class="highlight-res">কুটিল বুদ্ধি</span><br>• <strong>বাক্য:</strong> পেটে <em>জিলাপির প্যাঁচ</em> রেখে তুমি আর ভাল মানুষ সাজতে যেয়ো না।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-emerald anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (অফিস সহায়ক)</span><div class="question-text">বাগধারার অর্থ ও বাক্য: <strong>তামার বিষ</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">বাগধারা</span><div>• <strong>অর্থ:</strong> <span class="highlight-res">অর্থের কুপ্রভাব</span><br>• <strong>বাক্য:</strong> হঠাৎ বড় লোক কি না, তাই <em>তামার বিষে</em> বিবেকহীন হয়ে পড়েছে।</div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৮. সমার্থক শব্দ ও পারিভাষিক শব্দ ==================== -->
+  <div id="topic-somarthok" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৮</div>
+      <div class="topic-title">সমার্থক শব্দ ও বাংলা পারিভাষিক শব্দ</div>
+    </div>
+    <span class="topic-count">৪টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card-3d-wrap theme-purple anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">সমার্থক শব্দ লিখুন: <strong>জল</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">সমার্থক শব্দ</span><div>জল ➔ <span class="highlight-res">নীর</span> (অন্যান্য: পানি, উদক, বারি, সলিল, পয়)</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">সমার্থক শব্দ লিখুন: <strong>পৃথিবী</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">সমার্থক শব্দ</span><div>পৃথিবী ➔ <span class="highlight-res">ধরিত্রী</span> (অন্যান্য: বসুন্ধরা, ধরা, অবনী, জাহান, মেদিনী)</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">পারিভাষিক অর্থ: <strong>Verdict</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">অর্থ দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">পারিভাষিক অর্থ</span><div>Verdict ➔ <span class="highlight-res">রায়</span> (আদালতের সিদ্ধান্ত)</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-purple anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">পারিভাষিক অর্থ: <strong>Bailbond</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">অর্থ দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">পারিভাষিক অর্থ</span><div>Bailbond ➔ <span class="highlight-res">জামিননামা</span></div></div></div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ৯. ভাব সম্প্রসারণ ও অনুচ্ছেদ ==================== -->
+  <div id="topic-bhab" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">০৯</div>
+      <div class="topic-title">ভাব সম্প্রসারণ ও অনুচ্ছেদ লিখন</div>
+    </div>
+    <span class="topic-count">৫টি পূর্ণাঙ্গ রচনা</span>
+  </div>
+
+  <div class="cards-grid-single">
+    <!-- ১. সিলেট অনুচ্ছেদ -->
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">অনুচ্ছেদ লিখন: <strong>‘বাংলাদেশের চা-শিল্প’</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">সম্পূর্ণ অনুচ্ছেদ পড়ুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">আদর্শ অনুচ্ছেদ</span>
+          <p><strong>বাংলাদেশের চা-শিল্প:</strong> চা বাংলাদেশের অন্যতম প্রধান অর্থকরী ফসল এবং অন্যতম ঐতিহ্যবাহী রপ্তানি পণ্য। ১৮৪০ সালে চট্টগ্রামের পাইওনিয়ার বাগান এবং ১৮৫৪ সালে সিলেটের মালনীছড়ায় প্রথম বাণিজ্যিক চা চাষ শুরু হয়। বর্তমানে সিলেট, মৌলভীবাজার, হবিগঞ্জ, চট্টগ্রাম এবং উত্তরাঞ্চলের পঞ্চগড়ে বিস্তৃত সমতল ভূমিতে উন্নত মানের চা উৎপাদিত হচ্ছে। দেশের অভ্যন্তরীণ চাহিদা মেটানোর পাশাপাশি বিশ্বের বিভিন্ন দেশে উচ্চমানের চা রপ্তানি করে প্রতিবছর বিপুল পরিমাণ বৈদেশিক মুদ্রা অর্জিত হয়। এই শিল্পটি দেশের গ্রামীণ অর্থনীতি এবং বিশেষ করে অনগ্রসর নারী জনগোষ্ঠীর ব্যাপক কর্মসংস্থান সৃষ্টিতে অত্যন্ত গুরুত্বপূর্ণ অবদান রেখে চলেছে।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ২. জুডিসিয়াল নৈশ প্রহরী ভাব সম্প্রসারণ -->
+    <div class="card-3d-wrap theme-purple anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">ভাব সম্প্রসারণ: <strong>"আপন ভালো তো জগৎ ভালো"</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">সম্পূর্ণ ভাব সম্প্রসারণ পড়ুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">পূর্ণাঙ্গ ভাব সম্প্রসারণ</span>
+          <p><strong>মূলভাব:</strong> মানুষের নিজস্ব মনোভাব ও মানসিক দৃষ্টিভঙ্গির ওপরই জগতের ভালো ও মন্দ নির্ভর করে। নিজে সৎ, উদার ও নিষ্কলুষ হলে সমগ্র পৃথিবীকেই সুন্দর ও মঙ্গলময় বলে মনে হয়।</p>
+          <p style="margin-top:8px;"><strong>ভাব-সম্প্রসারণ:</strong> জগতকে আমরা যে দৃষ্টিতে দেখি, জগত আমাদের কাছে সেই রূপেই প্রতিফলিত হয়। একজন সৎ ও নির্মল চরিত্রের মানুষ সবসময় অন্যের মাঝে শুভ ও কল্যাণের সন্ধান পান। অন্যের ভুলত্রুটি ক্ষমা করে তিনি সবাইকে ভালোবাসার বন্ধনে আবদ্ধ করতে পারেন। বিপরীতপক্ষে, যে ব্যক্তি নিজে কুটিল, স্বার্থপর ও পাপাসক্ত, সে সমগ্র বিশ্বকেই সন্দেহের চোখে দেখে। তাই বিশ্বকে সুন্দর ও শান্তিময় হিসেবে পেতে হলে আগে নিজেকে সংশোধন করে ভালো হতে হবে। নিজের অন্তরে শুভচেতনা জাগ্রত থাকলে গোটা বিশ্বই কল্যাণময় মনে হয়।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ৩. জুডিসিয়াল অফিস সহকারী ভাব সম্প্রসারণ -->
+    <div class="card-3d-wrap theme-purple anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (অফিস সহকারী)</span><div class="question-text">ভাব সম্প্রসারণ: <strong>"সকলের তরে সকলে আমরা / প্রত্যেকে আমরা পরের তরে।"</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">সম্পূর্ণ ভাব সম্প্রসারণ পড়ুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">পূর্ণাঙ্গ ভাব সম্প্রসারণ</span>
+          <p><strong>মূলভাব:</strong> মানুষ সামাজিক জীব। পারস্পরিক সহমর্মিতা ও সহযোগিতার মাধ্যমেই মানব সমাজ টিকে থাকে। স্বার্থপরতা পরিহার করে একে অপরের উপকারে আত্মনিয়োগ করাই মানবজীবনের প্রকৃত সার্থকতা।</p>
+          <p style="margin-top:8px;"><strong>ভাব-সম্প্রসারণ:</strong> কোনো মানুষই সমাজে একা বাস করতে পারে না। আমরা প্রত্যেকেই পরস্পরের ওপর নির্ভরশীল। একজন মানুষের সুখ-দুঃখ সমগ্র সমাজের ওপর প্রভাব ফেলে। ব্যক্তিগত স্বার্থচিন্তায় মগ্ন থাকলে মানবসমাজে শান্তি ও প্রগতি আসে না। পরের কল্যাণে আত্মত্যাগের মাঝেই জীবনের পরম আনন্দ নিহিত। কবি কামিনী রায়ের এই শাশ্বত বাণী আমাদের স্মরণ করিয়ে দেয় যে, অপরের সুখে সুখী এবং অপরের দুঃখে ব্যথিত হওয়াই মানবিকতার শ্রেষ্ঠ ধর্ম।</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ৪. BSTI নবায়নযোগ্য জ্বালানি অনুচ্ছেদ -->
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">অনুচ্ছেদ লিখন (১০টি বাক্য): <strong>‘নবায়নযোগ্য জ্বালানি’</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">১০টি বাক্য পড়ুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">তথ্যবহুল ১০টি বাক্য</span>
+          <div style="line-height:1.8;">
+            ১. নবায়নযোগ্য জ্বালানি এমন এক শক্তির উৎস, যা স্বল্প সময়ের ব্যবধানে পুনরায় ব্যবহার করা যায় এবং এর ফলে জ্বালানির উৎসটি নিঃশেষ হয়ে যায় না।<br>
+            ২. বিভিন্ন প্রাকৃতিক উৎস যেমন: সূর্যের আলো ও তাপ, বায়ুপ্রবাহ, জলপ্রবাহ, জৈবশক্তি, সমুদ্রস্রোত ও হাইড্রোজেন ফুয়েল সেল নবায়নযোগ্য জ্বালানি হিসেবে বিবেচিত।<br>
+            ৩. বিশ্বের অধিকাংশ দেশ বর্তমানে বিদ্যুৎ ও জ্বালানি নিরাপত্তা নিশ্চিত করতে এই শক্তির দিকে ঝুঁকছে।<br>
+            ৪. বাংলাদেশ সরকারও পরিবেশবান্ধব বিদ্যুৎ উৎপাদনের জন্য নবায়নযোগ্য জ্বালানি নীতি ২০০৮ প্রণয়ন করেছে।<br>
+            ৫. বর্তমানে দেশে মোট বিদ্যুৎ উৎপাদনের প্রায় ২ থেকে ৩ শতাংশ আসে নবায়নযোগ্য জ্বালানি থেকে।<br>
+            ৬. জীবাশ্ম জ্বালানি ব্যবহারের ফলে ব্যাপক কার্বন নিঃসরণ ঘটে, যা বৈশ্বিক উষ্ণতা ও জলবায়ু পরিবর্তনের প্রধান কারণ।<br>
+            ৭. আন্তর্জাতিক শক্তি সংস্থার (IEA) তথ্যমতে বিশ্বে উৎপাদিত বিদ্যুতের প্রায় ৩০ শতাংশ এখন নবায়নযোগ্য উৎস থেকে আসছে।<br>
+            ৮. এটি সম্পূর্ণ পরিবেশবান্ধব, দূষণমুক্ত এবং দীর্ঘমেয়াদে অত্যন্ত সাশ্রয়ী।<br>
+            ৯. সৌরবিদ্যুৎ ও বায়ুবিদ্যুৎ প্রকল্পের প্রসারের মাধ্যমে জ্বালানি আমদানির ওপর নির্ভরতা বহুলাংশে কমানো সম্ভব।<br>
+            ১০. তাই জলবায়ু পরিবর্তন মোকাবেলা এবং টেকসই ভবিষ্যৎ বিনির্মাণে বিশ্বব্যাপী নবায়নযোগ্য জ্বালানির উৎপাদন ও ব্যবহার দ্রুত বাড়ছে।
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ৫. মন্ত্রিপরিষদ বিভাগ এআই অনুচ্ছেদ -->
+    <div class="card-3d-wrap theme-amber anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span><div class="question-text">অনুচ্ছেদ লিখন: <strong>‘কৃত্রিম বুদ্ধিমত্তা’ (AI)</strong></div></div>
+        <div class="trigger-action"><span class="action-hint">সম্পূর্ণ অনুচ্ছেদ পড়ুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">বিজ্ঞান ও প্রযুক্তি অনুচ্ছেদ</span>
+          <p>মানুষের চিন্তাশক্তি ও বুদ্ধিমত্তাকে কম্পিউটারের প্রোগ্রামিং ও অ্যালগরিদমের মাধ্যমে যন্ত্রের সাহায্যে অনুকরণ ও বাস্তবায়ন করার প্রযুক্তিকে <strong>কৃত্রিম বুদ্ধিমত্তা (Artificial Intelligence - AI)</strong> বলে। ১৯৫৫ সালে বিখ্যাত বিজ্ঞানী <strong>জন ম্যাকার্থি (John McCarthy)</strong> সর্বপ্রথম ‘Artificial Intelligence’ শব্দটি ব্যবহার করেন, এজন্য তাঁকে কৃত্রিম বুদ্ধিমত্তার জনক বলা হয়। এর আগে ১৯৫০ সালে ব্রিটিশ গণিতবিদ <strong>অ্যালান টুরিং (Alan Turing)</strong> যন্ত্রের বুদ্ধিমত্তা পরিমাপের জন্য ঐতিহাসিক ‘টুরিং টেস্ট’ (Turing Test) আবিষ্কার করেন। আধুনিক বিশ্বে ডাটা বিশ্লেষণ, নির্ভুল চিকিৎসা, স্বয়ংক্রিয় রোবটিক্স এবং দাপ্তরিক কার্যক্রমে কৃত্রিম বুদ্ধিমত্তা মানুষের সময় ও শ্রম লাঘবে যুগান্তকারী ভূমিকা পালন করছে।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ১০. আবেদনপত্র লিখন ==================== -->
+  <div id="topic-abedon" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">১০</div>
+      <div class="topic-title">দাপ্তরিক আবেদনপত্র লিখন</div>
+    </div>
+    <span class="topic-count">১টি দরখাস্ত</span>
+  </div>
+
+  <div class="cards-grid-single">
+    <div class="card-3d-wrap theme-amber anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content">
+          <span class="source-pill">মন্ত্রিপরিষদ বিভাগ (বিভিন্ন পদ)</span>
+          <div class="question-text">নৈমিত্তিক ছুটির আবেদন: <strong>তোষাখানা ইউনিটে কর্মরত অবস্থায় ২ দিনের ছুটির দরখাস্ত</strong></div>
+        </div>
+        <div class="trigger-action"><span class="action-hint">নমুনা আবেদনপত্র দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper">
+        <div class="ans-content">
+          <span class="ans-chip">সরকারি দাপ্তরিক আবেদনের নমুনা</span>
+          <div style="line-height:1.75; font-size:1rem;">
+            <b>তারিখ:</b> ২৭ সেপ্টেম্বর ২০২৬<br>
+            <b>বরাবর:</b> উপসচিব / যথাযথ কর্তৃপক্ষ, মন্ত্রিপরিষদ বিভাগ, বাংলাদেশ সচিবালয়, ঢাকা।<br>
+            <b>বিষয়: ২ (দুই) দিনের নৈমিত্তিক ছুটির জন্য আবেদন।</b><br><br>
+            মহোদয়,<br>
+            বিনীত নিবেদন এই যে, আমি আপনার কার্যালয়ের তোষাখানা ইউনিটে স্টোর কিপার পদে কর্মরত আছি। আমার একান্ত পারিবারিক জরুরি প্রয়োজনে আগামী ২৮ ও ২৯ সেপ্টেম্বর ২০২৬ মোট ২ (দুই) দিনের নৈমিত্তিক ছুটি ভোগ করা একান্ত আবশ্যক।<br><br>
+            অতএব, বিনীত প্রার্থনা, উক্ত ছুটির বিষয়টি বিবেচনাপূর্বক আমাকে আগামী ২৮ ও ২৯ সেপ্টেম্বর ২০২৬ তারিখের নৈমিত্তিক ছুটি মঞ্জুর করতে মহোদয়ের সদয় মর্জি হয়।<br><br>
+            <b>বিনীত নিবেদক:</b><br>
+            মো. করিম মিয়া<br>
+            স্টোর কিপার, তোষাখানা ইউনিট<br>
+            মন্ত্রিপরিষদ বিভাগ, বাংলাদেশ সচিবালয়, ঢাকা।
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== ১১. বাংলা সাহিত্য ও বিবিধ ==================== -->
+  <div id="topic-sahitya" class="topic-heading">
+    <div class="topic-left">
+      <div class="topic-badge-icon">১১</div>
+      <div class="topic-title">বাংলা সাহিত্য ও বিবিধ প্রশ্নোত্তর</div>
+    </div>
+    <span class="topic-count">৫টি প্রশ্ন</span>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card-3d-wrap theme-purple anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">জুডিসিয়াল (নৈশ প্রহরী)</span><div class="question-text">পল্লীকবি জসীমউদ্দীন রচিত <strong>দুইটি কবিতার নাম</strong> লিখুন</div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">সাহিত্য তথ্য</span><div>১. <span class="highlight-res">কবর</span><br>২. <span class="highlight-res">রাখাল ছেলে</span> (অন্যান্য: আসমানী, নিমন্ত্রণ)</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-r">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">‘মৃত্যুক্ষুধা’ কি ধরনের রচনা?</div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">সাহিত্য রূপ</span><div>উত্তর: <span class="highlight-res">উপন্যাস</span></div><div class="explanation-note">জাতীয় কবি কাজী নজরুল ইসলাম রচিত একটি কালজয়ী উপন্যাস।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-slide-l">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">‘সবার উপরে মানুষ সত্য’ কার উক্তি?</div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">উক্তি ও কবি</span><div>উত্তর: <span class="highlight-res">চণ্ডীদাস</span></div><div class="explanation-note">"সবার উপরে মানুষ সত্য তাহার উপরে নাই" — মধ্যযুগের কবি বড়ু চণ্ডীদাস।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-rose anim-flip">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">বিএসটিআই (BSTI)</span><div class="question-text">‘লা নুই বেঙ্গলী’ গ্রন্থের লেখক কে?</div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">লেখক</span><div>উত্তর: <span class="highlight-res">মির্তা এলিয়াদ (Mircea Eliade)</span></div><div class="explanation-note">মৈত্রেয়ী দেবীর সাথে প্রেমের স্মৃতিকথা নিয়ে লেখা বিখ্যাত ফরাসি ভাষার উপন্যাস।</div></div></div>
+    </div>
+
+    <div class="card-3d-wrap theme-cyan anim-zoom">
+      <button class="card-trigger" onclick="toggleCard(this)">
+        <div class="trigger-content"><span class="source-pill">সিলেট বিভাগীয় কমিশনার</span><div class="question-text">‘সিরাজাম মুনীরা’ কাব্যগ্রন্থটির রচয়িতা কে?</div></div>
+        <div class="trigger-action"><span class="action-hint">উত্তর দেখুন</span><span class="arrow-btn"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span></div>
+      </button>
+      <div class="ans-wrapper"><div class="ans-content"><span class="ans-chip">কাব্যগ্রন্থ</span><div>উত্তর: <span class="highlight-res">ফররুখ আহমদ</span></div></div></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="supervision-title">সার্বিক তত্ত্বাবধানে ও দিকনির্দেশনায়</div>
+    <div class="supervision-brand">BILAS ACADEMY</div>
+    <div style="font-size:0.88rem; color:#64748b; margin-top:10px;">
+      © সর্বস্বত্ব সংরক্ষিত — বিলাস একাডেমি (স্মার্ট জব সল্যুশন মাস্টার ব্যাংক)
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  function toggleCard(button) {
+    const card = button.closest('.card-3d-wrap');
+    card.classList.toggle('active');
+    updateStats();
+  }
+
+  function toggleAllCards(open) {
+    const cards = document.querySelectorAll('.card-3d-wrap');
+    cards.forEach(card => {
+      if (open) {
+        card.classList.add('active');
+      } else {
+        card.classList.remove('active');
+      }
+    });
+    updateStats();
+  }
+
+  function updateStats() {
+    const total = document.querySelectorAll('.card-3d-wrap').length;
+    const opened = document.querySelectorAll('.card-3d-wrap.active').length;
+    const banglaDigits = ['০','১','২','৩','৪','৫','৬','৭','৮','৯'];
+    const toBn = (n) => n.toString().split('').map(d => banglaDigits[d] || d).join('');
+    
+    const totalEl = document.getElementById('totalCards');
+    const openedEl = document.getElementById('openedCount');
+    if (totalEl) totalEl.innerText = toBn(total);
+    if (openedEl) openedEl.innerText = toBn(opened);
+  }
+
+  window.addEventListener('DOMContentLoaded', updateStats);
+</script>
+
+</body>
+</html>
