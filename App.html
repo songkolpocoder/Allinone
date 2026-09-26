@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>অফিস সহায়ক | বিলাস একাডেমি</title>
+    
+    <!-- Meta Settings -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="অফিস সহায়ক">
+
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #f8fafc;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: #0f172a;
+            font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            overflow-x: hidden;
+        }
+
+        .edu-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px -2px rgba(15, 23, 42, 0.04);
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .edu-card:active {
+            transform: scale(0.985);
+            background-color: #f1f5f9;
+            border-color: #cbd5e1;
+        }
+
+        .soft-badge-blue {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #dbeafe;
+        }
+
+        .view-enter {
+            animation: viewFade 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes viewFade {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Top Sticky Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 px-4 py-3">
+        <div class="max-w-lg mx-auto flex items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+                <button id="navBackBtn" onclick="handleNavigationBack()" class="hidden w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 flex items-center justify-center text-slate-700 active:scale-95 transition-all">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                </button>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                        <span class="text-[11px] font-bold tracking-wider text-blue-600 uppercase">অফিস সহায়ক প্রস্তুতি</span>
+                    </div>
+                    <h1 class="text-lg font-bold text-slate-900 leading-tight">BIPUL</h1>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button onclick="refreshData()" class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 hover:bg-slate-200 text-slate-700 flex items-center justify-center active:scale-95 transition-all" title="ডাটা রিফ্রেশ">
+                    <i data-lucide="rotate-cw" id="syncIcon" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="max-w-lg mx-auto mt-2.5">
+            <div class="relative flex items-center">
+                <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 pointer-events-none"></i>
+                <input 
+                    type="text" 
+                    id="searchField" 
+                    oninput="handleSearch(this.value)" 
+                    placeholder="অধ্যায় বা টপিক খুঁজুন..." 
+                    class="w-full bg-slate-100/90 border border-slate-200/90 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 transition-all font-['Hind_Siliguri']"
+                >
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-1 max-w-lg mx-auto w-full px-4 pt-4 pb-20 flex flex-col">
+        
+        <!-- Status Bar & Counter -->
+        <div class="flex items-center justify-between text-xs text-slate-500 mb-3 px-1">
+            <div class="flex items-center gap-1.5 font-medium truncate max-w-[240px]">
+                <i data-lucide="compass" class="w-3.5 h-3.5 text-slate-400"></i>
+                <span id="breadcrumbText">সকল স্টাডি অধ্যায়</span>
+            </div>
+            <span id="counterText" class="font-semibold soft-badge-blue px-2.5 py-0.5 rounded-full text-[11px]">লোড হচ্ছে...</span>
+        </div>
+
+        <!-- Loader -->
+        <div id="loader" class="flex flex-col items-center justify-center py-24 gap-3">
+            <div class="w-9 h-9 border-2 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+            <p class="text-xs text-slate-500 font-medium">তথ্য লোড হচ্ছে...</p>
+        </div>
+
+        <!-- Views Container -->
+        <div id="viewChapters" class="hidden flex flex-col gap-2.5 view-enter"></div>
+        <div id="viewTopics" class="hidden flex flex-col gap-2.5 view-enter"></div>
+        <div id="viewSubtopics" class="hidden flex flex-col gap-2.5 view-enter"></div>
+
+    </main>
+
+    <!-- Light Minimalist Footer -->
+    <footer class="border-t border-slate-200 bg-white py-3.5 text-center text-xs text-slate-400 font-medium">
+        •©️BIPUL 2027
+    </footer>
+
+    <script>
+        const PRIMARY_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlamSi9xXfdMg3FejytslnNxUSPG-GI3h4NsDrk1vgPGEkebeQMlEHTBvuL0REJaMbkN8RS10wCvXZ/pub?gid=0&single=true&output=csv";
+        const LOCAL_STORAGE_KEY = "bilas_office_sohayok_direct_db";
+
+        let allData = [];
+        let chaptersHierarchy = {};
+        let currentLevel = 'chapters';
+        let activeChapter = '';
+        let activeTopic = '';
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initApp();
+        });
+
+        async function initApp() {
+            lucide.createIcons();
+
+            const cached = localStorage.getItem(LOCAL_STORAGE_KEY);
+            if (cached) {
+                try {
+                    allData = JSON.parse(cached);
+                    structureHierarchy();
+                    renderChapters();
+                } catch(e) {}
+            }
+
+            await fetchData();
+        }
+
+        async function fetchCSVText() {
+            try {
+                const res = await fetch(PRIMARY_URL, { cache: 'no-cache' });
+                if (res.ok) {
+                    const text = await res.text();
+                    if (text && text.trim().length > 10) return text;
+                }
+            } catch(e) {}
+
+            try {
+                const proxyUrl = "https://api.allorigins.win/raw?url=" + encodeURIComponent(PRIMARY_URL);
+                const proxyRes = await fetch(proxyUrl);
+                if (proxyRes.ok) {
+                    const pText = await proxyRes.text();
+                    if (pText && pText.trim().length > 10) return pText;
+                }
+            } catch(e) {}
+
+            throw new Error("CSV Fetch Failed");
+        }
+
+        async function fetchData() {
+            const syncIcon = document.getElementById('syncIcon');
+            if (syncIcon) syncIcon.classList.add('animate-spin');
+
+            try {
+                const csvData = await fetchCSVText();
+                parseCsvData(csvData);
+                localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(allData));
+                structureHierarchy();
+
+                if (currentLevel === 'chapters') {
+                    renderChapters();
+                }
+            } catch(err) {
+                console.error("Fetch Error:", err);
+            } finally {
+                const loader = document.getElementById('loader');
+                if (loader) loader.classList.add('hidden');
+                if (syncIcon) syncIcon.classList.remove('animate-spin');
+            }
+        }
+
+        function refreshData() {
+            const loader = document.getElementById('loader');
+            if(loader) loader.classList.remove('hidden');
+            fetchData();
+        }
+
+        function parseCsvData(text) {
+            const lines = text.split(/\r?\n/).filter(line => line.trim() !== "");
+            if (lines.length === 0) return;
+
+            const rawHeaders = parseCSVRow(lines[0]);
+            const results = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const row = parseCSVRow(lines[i]);
+                if (row.length === 0) continue;
+                
+                const rawObj = {};
+                rawHeaders.forEach((origHeader, idx) => {
+                    rawObj[origHeader.trim()] = (row[idx] || '').trim();
+                });
+
+                const item = {
+                    Chapter: rawObj['Chapter'] || rawObj['অধ্যায়'] || rawObj['chapter'] || 'সাধারণ অধ্যায়',
+                    Topic: rawObj['Topic'] || rawObj['টপিক'] || rawObj['বিষয়'] || rawObj['topic'] || 'নোট',
+                    Subtopic: rawObj['Subtopic'] || rawObj['সাবটপিক'] || rawObj['subtopic'] || '',
+                    Short_Note: rawObj['Short_Note'] || rawObj['Note'] || rawObj['নোট'] || rawObj['short_note'] || '',
+                    ImageLink: rawObj['ImageLink'] || rawObj['Image_Link'] || rawObj['image_link'] || rawObj['Image'] || '',
+                    Video_Link: rawObj['Video_Link'] || rawObj['VideoLink'] || rawObj['video_link'] || ''
+                };
+                results.push(item);
+            }
+            allData = results;
+        }
+
+        function parseCSVRow(rowStr) {
+            const row = [];
+            let inQuotes = false;
+            let token = "";
+            for (let i = 0; i < rowStr.length; i++) {
+                const char = rowStr[i];
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    row.push(token.trim().replace(/^"|"$/g, ''));
+                    token = "";
+                } else {
+                    token += char;
+                }
+            }
+            row.push(token.trim().replace(/^"|"$/g, ''));
+            return row;
+        }
+
+        function structureHierarchy() {
+            chaptersHierarchy = {};
+            allData.forEach(row => {
+                const ch = row.Chapter || 'অন্যান্য অধ্যায়';
+                const tp = row.Topic || 'সাধারণ পাঠ';
+                
+                if (!chaptersHierarchy[ch]) chaptersHierarchy[ch] = {};
+                if (!chaptersHierarchy[ch][tp]) chaptersHierarchy[ch][tp] = [];
+                chaptersHierarchy[ch][tp].push(row);
+            });
+        }
+
+        // Action when an entry is clicked: Direct file redirection
+        function openDirectHTML(item) {
+            const target = (item.ImageLink || item.Video_Link || "").trim();
+            if (target) {
+                window.location.href = target; // Sorasori oi HTML file ba link e niye jabe
+            } else {
+                alert("এই টপিকের জন্য কোনো এইচটিএমএল ফাইল লিংক যুক্ত করা হয়নি।");
+            }
+        }
+
+        function showView(viewId) {
+            ['viewChapters', 'viewTopics', 'viewSubtopics'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.classList.add('hidden');
+            });
+            const target = document.getElementById(viewId);
+            if (target) target.classList.remove('hidden');
+
+            const backBtn = document.getElementById('navBackBtn');
+            if (currentLevel === 'chapters') {
+                backBtn.classList.add('hidden');
+            } else {
+                backBtn.classList.remove('hidden');
+            }
+            lucide.createIcons();
+        }
+
+        // View 1: Chapters (Adhyay)
+        function renderChapters() {
+            currentLevel = 'chapters';
+            document.getElementById('breadcrumbText').innerText = "সকল স্টাডি অধ্যায়";
+            
+            const chapters = Object.keys(chaptersHierarchy);
+            document.getElementById('counterText').innerText = `${chapters.length} টি অধ্যায়`;
+
+            const container = document.getElementById('viewChapters');
+            container.innerHTML = '';
+
+            chapters.forEach((chapterName, idx) => {
+                const totalTopics = Object.keys(chaptersHierarchy[chapterName]).length;
+                let totalItems = 0;
+                Object.values(chaptersHierarchy[chapterName]).forEach(arr => totalItems += arr.length);
+
+                const card = document.createElement('div');
+                card.className = "edu-card p-4 flex items-center justify-between cursor-pointer";
+                card.onclick = () => selectChapter(chapterName);
+                card.innerHTML = `
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-11 h-11 rounded-2xl bg-blue-50 text-blue-600 border border-blue-100 flex items-center justify-center font-bold text-sm">
+                            ${idx + 1 < 10 ? '0' + (idx + 1) : idx + 1}
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-[15px] leading-snug">${chapterName}</h3>
+                            <p class="text-xs text-slate-400 mt-0.5 font-medium">${totalTopics} টি বিষয়বস্তু • ${totalItems} টি ফাইল</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400">
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            showView('viewChapters');
+        }
+
+        function selectChapter(chapterName) {
+            activeChapter = chapterName;
+            renderTopics(chapterName);
+        }
+
+        // View 2: Topics
+        function renderTopics(chapterName) {
+            currentLevel = 'topics';
+            document.getElementById('breadcrumbText').innerText = chapterName;
+
+            const topicsMap = chaptersHierarchy[chapterName] || {};
+            const topicKeys = Object.keys(topicsMap);
+            document.getElementById('counterText').innerText = `${topicKeys.length} টি টপিক`;
+
+            const container = document.getElementById('viewTopics');
+            container.innerHTML = '';
+
+            topicKeys.forEach((topicName) => {
+                const items = topicsMap[topicName];
+                const hasSubtopics = items.some(i => i.Subtopic && i.Subtopic.trim() !== "");
+
+                const card = document.createElement('div');
+                card.className = "edu-card p-4 flex items-center justify-between cursor-pointer";
+                
+                if (hasSubtopics) {
+                    card.onclick = () => selectTopic(topicName);
+                } else {
+                    card.onclick = () => openDirectHTML(items[0]);
+                }
+
+                card.innerHTML = `
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-10 h-10 rounded-xl bg-slate-50 text-slate-600 border border-slate-200 flex items-center justify-center">
+                            <i data-lucide="${hasSubtopics ? 'layers' : 'external-link'}" class="w-4 h-4 ${hasSubtopics ? 'text-blue-600' : 'text-emerald-600'}"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm leading-snug">${topicName}</h4>
+                            <p class="text-[11px] text-slate-400 mt-0.5 font-medium">${hasSubtopics ? items.length + ' টি উপ-অংশ' : 'সরাসরি ফাইলে যান'}</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400">
+                        <i data-lucide="${hasSubtopics ? 'chevron-right' : 'arrow-up-right'}" class="w-4 h-4"></i>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            showView('viewTopics');
+        }
+
+        function selectTopic(topicName) {
+            activeTopic = topicName;
+            renderSubtopics(activeChapter, topicName);
+        }
+
+        // View 3: Subtopics
+        function renderSubtopics(chapterName, topicName) {
+            currentLevel = 'subtopics';
+            document.getElementById('breadcrumbText').innerText = topicName;
+
+            const items = chaptersHierarchy[chapterName][topicName] || [];
+            document.getElementById('counterText').innerText = `${items.length} টি পার্ট`;
+
+            const container = document.getElementById('viewSubtopics');
+            container.innerHTML = '';
+
+            items.forEach((item, idx) => {
+                const subName = item.Subtopic || `অংশ ${idx + 1}`;
+                const card = document.createElement('div');
+                card.className = "edu-card p-4 flex items-center justify-between cursor-pointer";
+                card.onclick = () => openDirectHTML(item);
+
+                card.innerHTML = `
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-100 flex items-center justify-center">
+                            <i data-lucide="file-code" class="w-4 h-4 text-emerald-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm leading-snug">${subName}</h4>
+                            <p class="text-[11px] text-slate-400 mt-0.5 line-clamp-1 font-medium">${item.Short_Note || 'ফাইলটি ওপেন করতে ট্যাপ করুন'}</p>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400">
+                        <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            showView('viewSubtopics');
+        }
+
+        function handleNavigationBack() {
+            if (currentLevel === 'subtopics') {
+                renderTopics(activeChapter);
+            } else if (currentLevel === 'topics') {
+                renderChapters();
+            }
+        }
+
+        function handleSearch(query) {
+            const q = query.trim().toLowerCase();
+            if (!q) {
+                renderChapters();
+                return;
+            }
+
+            currentLevel = 'search';
+            document.getElementById('navBackBtn').classList.remove('hidden');
+            document.getElementById('breadcrumbText').innerText = `অনুসন্ধান: "${query}"`;
+
+            const matched = allData.filter(item => {
+                const ch = (item.Chapter || '').toLowerCase();
+                const tp = (item.Topic || '').toLowerCase();
+                const st = (item.Subtopic || '').toLowerCase();
+                const nt = (item.Short_Note || '').toLowerCase();
+                return ch.includes(q) || tp.includes(q) || st.includes(q) || nt.includes(q);
+            });
+
+            document.getElementById('counterText').innerText = `${matched.length} টি ফলাফল`;
+
+            const container = document.getElementById('viewChapters');
+            container.innerHTML = '';
+
+            if (matched.length === 0) {
+                container.innerHTML = `<div class="p-10 text-center text-slate-400 font-medium">কিছু পাওয়া যায়নি!</div>`;
+            } else {
+                matched.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = "edu-card p-4 flex items-center justify-between cursor-pointer";
+                    card.onclick = () => openDirectHTML(item);
+                    
+                    const display = item.Subtopic ? `${item.Topic} > ${item.Subtopic}` : item.Topic;
+                    card.innerHTML = `
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 border border-blue-100 flex items-center justify-center">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm leading-snug">${display}</h4>
+                                <p class="text-[11px] text-slate-400 mt-0.5 font-medium">${item.Chapter || 'অফিস সহায়ক'}</p>
+                            </div>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400"></i>
+                    `;
+                    container.appendChild(card);
+                });
+            }
+
+            showView('viewChapters');
+        }
+    </script>
+</body>
+</html>
